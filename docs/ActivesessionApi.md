@@ -1,31 +1,31 @@
-# Org.OpenAPITools.Api.ActivesessionApi
+# eZmaxinc/eZmax-SDK-csharp-netcore.Api.ActivesessionApi
 
 All URIs are relative to *https://prod.api.appcluster01.ca-central-1.ezmax.com/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetCurrent**](ActivesessionApi.md#getcurrent) | **GET** /1/object/activesession/getCurrent | Get Current Activesession
+[**ActivesessionGetCurrentV1**](ActivesessionApi.md#activesessiongetcurrentv1) | **GET** /1/object/activesession/getCurrent | Get Current Activesession
 
 
-<a name="getcurrent"></a>
-# **GetCurrent**
-> void GetCurrent ()
+<a name="activesessiongetcurrentv1"></a>
+# **ActivesessionGetCurrentV1**
+> ActivesessionGetCurrentV1Response ActivesessionGetCurrentV1 ()
 
 Get Current Activesession
 
-Todo Description
+Retrieve the details about the current activesession
 
 ### Example
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
 
 namespace Example
 {
-    public class GetCurrentExample
+    public class ActivesessionGetCurrentV1Example
     {
         public static void Main()
         {
@@ -41,11 +41,12 @@ namespace Example
             try
             {
                 // Get Current Activesession
-                apiInstance.GetCurrent();
+                ActivesessionGetCurrentV1Response result = apiInstance.ActivesessionGetCurrentV1();
+                Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ActivesessionApi.GetCurrent: " + e.Message );
+                Debug.Print("Exception when calling ActivesessionApi.ActivesessionGetCurrentV1: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -59,7 +60,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-void (empty response body)
+[**ActivesessionGetCurrentV1Response**](ActivesessionGetCurrentV1Response.md)
 
 ### Authorization
 
