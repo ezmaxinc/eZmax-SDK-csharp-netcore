@@ -8,6 +8,8 @@ docs/ActivesessionGetCurrentV1ResponseMPayload.md
 docs/AddressRequest.md
 docs/AttemptResponse.md
 docs/CommonAudit.md
+docs/CommonGetAutocompleteV1Response.md
+docs/CommonGetAutocompleteV1ResponseMPayload.md
 docs/CommonResponse.md
 docs/CommonResponseError.md
 docs/CommonResponseObjDebug.md
@@ -87,6 +89,7 @@ docs/FranchisereferalincomeCreateObjectV1Response.md
 docs/FranchisereferalincomeCreateObjectV1ResponseMPayload.md
 docs/FranchisereferalincomeRequest.md
 docs/FranchisereferalincomeRequestCompound.md
+docs/PeriodApi.md
 docs/PhoneRequest.md
 docs/WebhookEzsignDocumentCompleted.md
 docs/WebhookEzsignDocumentCompletedAllOf.md
@@ -102,11 +105,14 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/EzsignfolderApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/EzsignfoldersignerassociationApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/EzsignsignatureApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/FranchisereferalincomeApiTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/PeriodApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/ActivesessionGetCurrentV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/ActivesessionGetCurrentV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/AddressRequestTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/AttemptResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/CommonAuditTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/CommonGetAutocompleteV1ResponseMPayloadTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/CommonGetAutocompleteV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/CommonResponseErrorTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/CommonResponseObjDebugPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/CommonResponseObjDebugTests.cs
@@ -195,6 +201,7 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/EzsignfolderApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/EzsignfoldersignerassociationApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/EzsignsignatureApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/FranchisereferalincomeApi.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/PeriodApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Client/ApiClient.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Client/ApiException.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Client/ApiResponse.cs
@@ -216,6 +223,8 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/ActivesessionGetCurrentV1ResponseMPa
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/AddressRequest.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/AttemptResponse.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/CommonAudit.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/CommonGetAutocompleteV1Response.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/CommonGetAutocompleteV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/CommonResponse.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/CommonResponseError.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/CommonResponseObjDebug.cs
