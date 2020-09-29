@@ -24,69 +24,73 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IFranchisereferalincomeApiSync : IApiAccessor
+    public interface IFranchisebrokerApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
-        /// Create a new Franchisereferalincome
+        /// Retrieve Franchisebrokers and IDs
         /// </summary>
         /// <remarks>
-        /// The endpoint allows to create one or many elements at once.  The array can contain simple (Just the object) or compound (The object and its child) objects.  Creating compound elements allows to reduce the multiple requests to create all child objects.
+        /// Get the list of Franchisebrokers to be used in a dropdown or autocomplete control.
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="franchisereferalincomeCreateObjectV1Request"></param>
-        /// <returns>FranchisereferalincomeCreateObjectV1Response</returns>
-        FranchisereferalincomeCreateObjectV1Response FranchisereferalincomeCreateObjectV1(List<FranchisereferalincomeCreateObjectV1Request> franchisereferalincomeCreateObjectV1Request);
+        /// <param name="sSelector">The type of Franchisebrokers to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
+        /// <returns>CommonGetAutocompleteV1Response</returns>
+        CommonGetAutocompleteV1Response FranchisebrokerGetAutocompleteV1(string sSelector, string sQuery = default(string));
 
         /// <summary>
-        /// Create a new Franchisereferalincome
+        /// Retrieve Franchisebrokers and IDs
         /// </summary>
         /// <remarks>
-        /// The endpoint allows to create one or many elements at once.  The array can contain simple (Just the object) or compound (The object and its child) objects.  Creating compound elements allows to reduce the multiple requests to create all child objects.
+        /// Get the list of Franchisebrokers to be used in a dropdown or autocomplete control.
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="franchisereferalincomeCreateObjectV1Request"></param>
-        /// <returns>ApiResponse of FranchisereferalincomeCreateObjectV1Response</returns>
-        ApiResponse<FranchisereferalincomeCreateObjectV1Response> FranchisereferalincomeCreateObjectV1WithHttpInfo(List<FranchisereferalincomeCreateObjectV1Request> franchisereferalincomeCreateObjectV1Request);
+        /// <param name="sSelector">The type of Franchisebrokers to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
+        /// <returns>ApiResponse of CommonGetAutocompleteV1Response</returns>
+        ApiResponse<CommonGetAutocompleteV1Response> FranchisebrokerGetAutocompleteV1WithHttpInfo(string sSelector, string sQuery = default(string));
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IFranchisereferalincomeApiAsync : IApiAccessor
+    public interface IFranchisebrokerApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
-        /// Create a new Franchisereferalincome
+        /// Retrieve Franchisebrokers and IDs
         /// </summary>
         /// <remarks>
-        /// The endpoint allows to create one or many elements at once.  The array can contain simple (Just the object) or compound (The object and its child) objects.  Creating compound elements allows to reduce the multiple requests to create all child objects.
+        /// Get the list of Franchisebrokers to be used in a dropdown or autocomplete control.
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="franchisereferalincomeCreateObjectV1Request"></param>
+        /// <param name="sSelector">The type of Franchisebrokers to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of FranchisereferalincomeCreateObjectV1Response</returns>
-        System.Threading.Tasks.Task<FranchisereferalincomeCreateObjectV1Response> FranchisereferalincomeCreateObjectV1Async(List<FranchisereferalincomeCreateObjectV1Request> franchisereferalincomeCreateObjectV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of CommonGetAutocompleteV1Response</returns>
+        System.Threading.Tasks.Task<CommonGetAutocompleteV1Response> FranchisebrokerGetAutocompleteV1Async(string sSelector, string sQuery = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
-        /// Create a new Franchisereferalincome
+        /// Retrieve Franchisebrokers and IDs
         /// </summary>
         /// <remarks>
-        /// The endpoint allows to create one or many elements at once.  The array can contain simple (Just the object) or compound (The object and its child) objects.  Creating compound elements allows to reduce the multiple requests to create all child objects.
+        /// Get the list of Franchisebrokers to be used in a dropdown or autocomplete control.
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="franchisereferalincomeCreateObjectV1Request"></param>
+        /// <param name="sSelector">The type of Franchisebrokers to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (FranchisereferalincomeCreateObjectV1Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<FranchisereferalincomeCreateObjectV1Response>> FranchisereferalincomeCreateObjectV1WithHttpInfoAsync(List<FranchisereferalincomeCreateObjectV1Request> franchisereferalincomeCreateObjectV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (CommonGetAutocompleteV1Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CommonGetAutocompleteV1Response>> FranchisebrokerGetAutocompleteV1WithHttpInfoAsync(string sSelector, string sQuery = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IFranchisereferalincomeApi : IFranchisereferalincomeApiSync, IFranchisereferalincomeApiAsync
+    public interface IFranchisebrokerApi : IFranchisebrokerApiSync, IFranchisebrokerApiAsync
     {
 
     }
@@ -94,23 +98,23 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class FranchisereferalincomeApi : IFranchisereferalincomeApi
+    public partial class FranchisebrokerApi : IFranchisebrokerApi
     {
         private eZmaxinc/eZmax-SDK-csharp-netcore.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FranchisereferalincomeApi"/> class.
+        /// Initializes a new instance of the <see cref="FranchisebrokerApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public FranchisereferalincomeApi() : this((string)null)
+        public FranchisebrokerApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FranchisereferalincomeApi"/> class.
+        /// Initializes a new instance of the <see cref="FranchisebrokerApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public FranchisereferalincomeApi(String basePath)
+        public FranchisebrokerApi(String basePath)
         {
             this.Configuration = eZmaxinc/eZmax-SDK-csharp-netcore.Client.Configuration.MergeConfigurations(
                 eZmaxinc/eZmax-SDK-csharp-netcore.Client.GlobalConfiguration.Instance,
@@ -122,12 +126,12 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FranchisereferalincomeApi"/> class
+        /// Initializes a new instance of the <see cref="FranchisebrokerApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public FranchisereferalincomeApi(eZmaxinc/eZmax-SDK-csharp-netcore.Client.Configuration configuration)
+        public FranchisebrokerApi(eZmaxinc/eZmax-SDK-csharp-netcore.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -141,13 +145,13 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FranchisereferalincomeApi"/> class
+        /// Initializes a new instance of the <see cref="FranchisebrokerApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public FranchisereferalincomeApi(eZmaxinc/eZmax-SDK-csharp-netcore.Client.ISynchronousClient client, eZmaxinc/eZmax-SDK-csharp-netcore.Client.IAsynchronousClient asyncClient, eZmaxinc/eZmax-SDK-csharp-netcore.Client.IReadableConfiguration configuration)
+        public FranchisebrokerApi(eZmaxinc/eZmax-SDK-csharp-netcore.Client.ISynchronousClient client, eZmaxinc/eZmax-SDK-csharp-netcore.Client.IAsynchronousClient asyncClient, eZmaxinc/eZmax-SDK-csharp-netcore.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -201,33 +205,34 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Create a new Franchisereferalincome The endpoint allows to create one or many elements at once.  The array can contain simple (Just the object) or compound (The object and its child) objects.  Creating compound elements allows to reduce the multiple requests to create all child objects.
+        /// Retrieve Franchisebrokers and IDs Get the list of Franchisebrokers to be used in a dropdown or autocomplete control.
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="franchisereferalincomeCreateObjectV1Request"></param>
-        /// <returns>FranchisereferalincomeCreateObjectV1Response</returns>
-        public FranchisereferalincomeCreateObjectV1Response FranchisereferalincomeCreateObjectV1(List<FranchisereferalincomeCreateObjectV1Request> franchisereferalincomeCreateObjectV1Request)
+        /// <param name="sSelector">The type of Franchisebrokers to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
+        /// <returns>CommonGetAutocompleteV1Response</returns>
+        public CommonGetAutocompleteV1Response FranchisebrokerGetAutocompleteV1(string sSelector, string sQuery = default(string))
         {
-            eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<FranchisereferalincomeCreateObjectV1Response> localVarResponse = FranchisereferalincomeCreateObjectV1WithHttpInfo(franchisereferalincomeCreateObjectV1Request);
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<CommonGetAutocompleteV1Response> localVarResponse = FranchisebrokerGetAutocompleteV1WithHttpInfo(sSelector, sQuery);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create a new Franchisereferalincome The endpoint allows to create one or many elements at once.  The array can contain simple (Just the object) or compound (The object and its child) objects.  Creating compound elements allows to reduce the multiple requests to create all child objects.
+        /// Retrieve Franchisebrokers and IDs Get the list of Franchisebrokers to be used in a dropdown or autocomplete control.
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="franchisereferalincomeCreateObjectV1Request"></param>
-        /// <returns>ApiResponse of FranchisereferalincomeCreateObjectV1Response</returns>
-        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<FranchisereferalincomeCreateObjectV1Response> FranchisereferalincomeCreateObjectV1WithHttpInfo(List<FranchisereferalincomeCreateObjectV1Request> franchisereferalincomeCreateObjectV1Request)
+        /// <param name="sSelector">The type of Franchisebrokers to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
+        /// <returns>ApiResponse of CommonGetAutocompleteV1Response</returns>
+        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<CommonGetAutocompleteV1Response> FranchisebrokerGetAutocompleteV1WithHttpInfo(string sSelector, string sQuery = default(string))
         {
-            // verify the required parameter 'franchisereferalincomeCreateObjectV1Request' is set
-            if (franchisereferalincomeCreateObjectV1Request == null)
-                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'franchisereferalincomeCreateObjectV1Request' when calling FranchisereferalincomeApi->FranchisereferalincomeCreateObjectV1");
+            // verify the required parameter 'sSelector' is set
+            if (sSelector == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'sSelector' when calling FranchisebrokerApi->FranchisebrokerGetAutocompleteV1");
 
             eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json"
             };
 
             // to determine the Accept header
@@ -241,7 +246,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.Data = franchisereferalincomeCreateObjectV1Request;
+            localVarRequestOptions.PathParameters.Add("sSelector", eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.ParameterToString(sSelector)); // path parameter
+            if (sQuery != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.ParameterToMultiMap("", "sQuery", sQuery));
+            }
 
             // authentication (Authorization) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -250,11 +259,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<FranchisereferalincomeCreateObjectV1Response>("/1/object/franchisereferalincome", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<CommonGetAutocompleteV1Response>("/1/object/franchisebroker/getAutocomplete/{sSelector}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("FranchisereferalincomeCreateObjectV1", localVarResponse);
+                Exception _exception = this.ExceptionFactory("FranchisebrokerGetAutocompleteV1", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -262,36 +271,37 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Create a new Franchisereferalincome The endpoint allows to create one or many elements at once.  The array can contain simple (Just the object) or compound (The object and its child) objects.  Creating compound elements allows to reduce the multiple requests to create all child objects.
+        /// Retrieve Franchisebrokers and IDs Get the list of Franchisebrokers to be used in a dropdown or autocomplete control.
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="franchisereferalincomeCreateObjectV1Request"></param>
+        /// <param name="sSelector">The type of Franchisebrokers to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of FranchisereferalincomeCreateObjectV1Response</returns>
-        public async System.Threading.Tasks.Task<FranchisereferalincomeCreateObjectV1Response> FranchisereferalincomeCreateObjectV1Async(List<FranchisereferalincomeCreateObjectV1Request> franchisereferalincomeCreateObjectV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of CommonGetAutocompleteV1Response</returns>
+        public async System.Threading.Tasks.Task<CommonGetAutocompleteV1Response> FranchisebrokerGetAutocompleteV1Async(string sSelector, string sQuery = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<FranchisereferalincomeCreateObjectV1Response> localVarResponse = await FranchisereferalincomeCreateObjectV1WithHttpInfoAsync(franchisereferalincomeCreateObjectV1Request, cancellationToken).ConfigureAwait(false);
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<CommonGetAutocompleteV1Response> localVarResponse = await FranchisebrokerGetAutocompleteV1WithHttpInfoAsync(sSelector, sQuery, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create a new Franchisereferalincome The endpoint allows to create one or many elements at once.  The array can contain simple (Just the object) or compound (The object and its child) objects.  Creating compound elements allows to reduce the multiple requests to create all child objects.
+        /// Retrieve Franchisebrokers and IDs Get the list of Franchisebrokers to be used in a dropdown or autocomplete control.
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="franchisereferalincomeCreateObjectV1Request"></param>
+        /// <param name="sSelector">The type of Franchisebrokers to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (FranchisereferalincomeCreateObjectV1Response)</returns>
-        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<FranchisereferalincomeCreateObjectV1Response>> FranchisereferalincomeCreateObjectV1WithHttpInfoAsync(List<FranchisereferalincomeCreateObjectV1Request> franchisereferalincomeCreateObjectV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (CommonGetAutocompleteV1Response)</returns>
+        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<CommonGetAutocompleteV1Response>> FranchisebrokerGetAutocompleteV1WithHttpInfoAsync(string sSelector, string sQuery = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'franchisereferalincomeCreateObjectV1Request' is set
-            if (franchisereferalincomeCreateObjectV1Request == null)
-                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'franchisereferalincomeCreateObjectV1Request' when calling FranchisereferalincomeApi->FranchisereferalincomeCreateObjectV1");
+            // verify the required parameter 'sSelector' is set
+            if (sSelector == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'sSelector' when calling FranchisebrokerApi->FranchisebrokerGetAutocompleteV1");
 
 
             eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
-                "application/json"
             };
 
             // to determine the Accept header
@@ -306,7 +316,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.Data = franchisereferalincomeCreateObjectV1Request;
+            localVarRequestOptions.PathParameters.Add("sSelector", eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.ParameterToString(sSelector)); // path parameter
+            if (sQuery != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.ParameterToMultiMap("", "sQuery", sQuery));
+            }
 
             // authentication (Authorization) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -316,11 +330,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<FranchisereferalincomeCreateObjectV1Response>("/1/object/franchisereferalincome", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<CommonGetAutocompleteV1Response>("/1/object/franchisebroker/getAutocomplete/{sSelector}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("FranchisereferalincomeCreateObjectV1", localVarResponse);
+                Exception _exception = this.ExceptionFactory("FranchisebrokerGetAutocompleteV1", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
