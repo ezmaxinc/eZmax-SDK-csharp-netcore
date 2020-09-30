@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eZmaxinc/eZmax-SDK-csharp-netcore", "src\eZmaxinc/eZmax-SDK-csharp-netcore\eZmaxinc/eZmax-SDK-csharp-netcore.csproj", "{DF8D1A37-CA71-4500-9017-90E658EB88B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eZmaxinc/eZmax-SDK-csharp-netcore", "src\eZmaxinc/eZmax-SDK-csharp-netcore\eZmaxinc/eZmax-SDK-csharp-netcore.csproj", "{7E222740-3B92-43C8-B3AB-5EC153BD1E4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eZmaxinc/eZmax-SDK-csharp-netcore.Test", "src\eZmaxinc/eZmax-SDK-csharp-netcore.Test\eZmaxinc/eZmax-SDK-csharp-netcore.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DF8D1A37-CA71-4500-9017-90E658EB88B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF8D1A37-CA71-4500-9017-90E658EB88B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF8D1A37-CA71-4500-9017-90E658EB88B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF8D1A37-CA71-4500-9017-90E658EB88B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E222740-3B92-43C8-B3AB-5EC153BD1E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E222740-3B92-43C8-B3AB-5EC153BD1E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E222740-3B92-43C8-B3AB-5EC153BD1E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E222740-3B92-43C8-B3AB-5EC153BD1E4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
