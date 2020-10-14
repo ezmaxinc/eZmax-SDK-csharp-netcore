@@ -24,65 +24,73 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IActivesessionApiSync : IApiAccessor
+    public interface IFranchiseofficeApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
-        /// Get Current Activesession
+        /// Retrieve Franchiseoffices and IDs
         /// </summary>
         /// <remarks>
-        /// Retrieve the details about the current activesession
+        /// Get the list of Franchiseoffices to be used in a dropdown or autocomplete control.
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ActivesessionGetCurrentV1Response</returns>
-        ActivesessionGetCurrentV1Response ActivesessionGetCurrentV1();
+        /// <param name="sSelector">The type of Franchiseoffices to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
+        /// <returns>CommonGetAutocompleteV1Response</returns>
+        CommonGetAutocompleteV1Response FranchiseofficeGetAutocompleteV1(string sSelector, string sQuery = default(string));
 
         /// <summary>
-        /// Get Current Activesession
+        /// Retrieve Franchiseoffices and IDs
         /// </summary>
         /// <remarks>
-        /// Retrieve the details about the current activesession
+        /// Get the list of Franchiseoffices to be used in a dropdown or autocomplete control.
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of ActivesessionGetCurrentV1Response</returns>
-        ApiResponse<ActivesessionGetCurrentV1Response> ActivesessionGetCurrentV1WithHttpInfo();
+        /// <param name="sSelector">The type of Franchiseoffices to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
+        /// <returns>ApiResponse of CommonGetAutocompleteV1Response</returns>
+        ApiResponse<CommonGetAutocompleteV1Response> FranchiseofficeGetAutocompleteV1WithHttpInfo(string sSelector, string sQuery = default(string));
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IActivesessionApiAsync : IApiAccessor
+    public interface IFranchiseofficeApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
-        /// Get Current Activesession
+        /// Retrieve Franchiseoffices and IDs
         /// </summary>
         /// <remarks>
-        /// Retrieve the details about the current activesession
+        /// Get the list of Franchiseoffices to be used in a dropdown or autocomplete control.
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="sSelector">The type of Franchiseoffices to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ActivesessionGetCurrentV1Response</returns>
-        System.Threading.Tasks.Task<ActivesessionGetCurrentV1Response> ActivesessionGetCurrentV1Async(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of CommonGetAutocompleteV1Response</returns>
+        System.Threading.Tasks.Task<CommonGetAutocompleteV1Response> FranchiseofficeGetAutocompleteV1Async(string sSelector, string sQuery = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
-        /// Get Current Activesession
+        /// Retrieve Franchiseoffices and IDs
         /// </summary>
         /// <remarks>
-        /// Retrieve the details about the current activesession
+        /// Get the list of Franchiseoffices to be used in a dropdown or autocomplete control.
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="sSelector">The type of Franchiseoffices to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (ActivesessionGetCurrentV1Response)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ActivesessionGetCurrentV1Response>> ActivesessionGetCurrentV1WithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (CommonGetAutocompleteV1Response)</returns>
+        System.Threading.Tasks.Task<ApiResponse<CommonGetAutocompleteV1Response>> FranchiseofficeGetAutocompleteV1WithHttpInfoAsync(string sSelector, string sQuery = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IActivesessionApi : IActivesessionApiSync, IActivesessionApiAsync
+    public interface IFranchiseofficeApi : IFranchiseofficeApiSync, IFranchiseofficeApiAsync
     {
 
     }
@@ -90,23 +98,23 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class ActivesessionApi : IActivesessionApi
+    public partial class FranchiseofficeApi : IFranchiseofficeApi
     {
         private eZmaxinc/eZmax-SDK-csharp-netcore.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ActivesessionApi"/> class.
+        /// Initializes a new instance of the <see cref="FranchiseofficeApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public ActivesessionApi() : this((string)null)
+        public FranchiseofficeApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ActivesessionApi"/> class.
+        /// Initializes a new instance of the <see cref="FranchiseofficeApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public ActivesessionApi(String basePath)
+        public FranchiseofficeApi(String basePath)
         {
             this.Configuration = eZmaxinc/eZmax-SDK-csharp-netcore.Client.Configuration.MergeConfigurations(
                 eZmaxinc/eZmax-SDK-csharp-netcore.Client.GlobalConfiguration.Instance,
@@ -118,12 +126,12 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ActivesessionApi"/> class
+        /// Initializes a new instance of the <see cref="FranchiseofficeApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public ActivesessionApi(eZmaxinc/eZmax-SDK-csharp-netcore.Client.Configuration configuration)
+        public FranchiseofficeApi(eZmaxinc/eZmax-SDK-csharp-netcore.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -137,13 +145,13 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ActivesessionApi"/> class
+        /// Initializes a new instance of the <see cref="FranchiseofficeApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public ActivesessionApi(eZmaxinc/eZmax-SDK-csharp-netcore.Client.ISynchronousClient client, eZmaxinc/eZmax-SDK-csharp-netcore.Client.IAsynchronousClient asyncClient, eZmaxinc/eZmax-SDK-csharp-netcore.Client.IReadableConfiguration configuration)
+        public FranchiseofficeApi(eZmaxinc/eZmax-SDK-csharp-netcore.Client.ISynchronousClient client, eZmaxinc/eZmax-SDK-csharp-netcore.Client.IAsynchronousClient asyncClient, eZmaxinc/eZmax-SDK-csharp-netcore.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -197,23 +205,31 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Get Current Activesession Retrieve the details about the current activesession
+        /// Retrieve Franchiseoffices and IDs Get the list of Franchiseoffices to be used in a dropdown or autocomplete control.
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ActivesessionGetCurrentV1Response</returns>
-        public ActivesessionGetCurrentV1Response ActivesessionGetCurrentV1()
+        /// <param name="sSelector">The type of Franchiseoffices to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
+        /// <returns>CommonGetAutocompleteV1Response</returns>
+        public CommonGetAutocompleteV1Response FranchiseofficeGetAutocompleteV1(string sSelector, string sQuery = default(string))
         {
-            eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<ActivesessionGetCurrentV1Response> localVarResponse = ActivesessionGetCurrentV1WithHttpInfo();
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<CommonGetAutocompleteV1Response> localVarResponse = FranchiseofficeGetAutocompleteV1WithHttpInfo(sSelector, sQuery);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get Current Activesession Retrieve the details about the current activesession
+        /// Retrieve Franchiseoffices and IDs Get the list of Franchiseoffices to be used in a dropdown or autocomplete control.
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of ActivesessionGetCurrentV1Response</returns>
-        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<ActivesessionGetCurrentV1Response> ActivesessionGetCurrentV1WithHttpInfo()
+        /// <param name="sSelector">The type of Franchiseoffices to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
+        /// <returns>ApiResponse of CommonGetAutocompleteV1Response</returns>
+        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<CommonGetAutocompleteV1Response> FranchiseofficeGetAutocompleteV1WithHttpInfo(string sSelector, string sQuery = default(string))
         {
+            // verify the required parameter 'sSelector' is set
+            if (sSelector == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'sSelector' when calling FranchiseofficeApi->FranchiseofficeGetAutocompleteV1");
+
             eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
@@ -230,6 +246,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
+            localVarRequestOptions.PathParameters.Add("sSelector", eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.ParameterToString(sSelector)); // path parameter
+            if (sQuery != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.ParameterToMultiMap("", "sQuery", sQuery));
+            }
 
             // authentication (Authorization) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -238,11 +259,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<ActivesessionGetCurrentV1Response>("/1/object/activesession/getCurrent", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<CommonGetAutocompleteV1Response>("/1/object/franchiseoffice/getAutocomplete/{sSelector}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ActivesessionGetCurrentV1", localVarResponse);
+                Exception _exception = this.ExceptionFactory("FranchiseofficeGetAutocompleteV1", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -250,25 +271,33 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Get Current Activesession Retrieve the details about the current activesession
+        /// Retrieve Franchiseoffices and IDs Get the list of Franchiseoffices to be used in a dropdown or autocomplete control.
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="sSelector">The type of Franchiseoffices to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ActivesessionGetCurrentV1Response</returns>
-        public async System.Threading.Tasks.Task<ActivesessionGetCurrentV1Response> ActivesessionGetCurrentV1Async(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of CommonGetAutocompleteV1Response</returns>
+        public async System.Threading.Tasks.Task<CommonGetAutocompleteV1Response> FranchiseofficeGetAutocompleteV1Async(string sSelector, string sQuery = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<ActivesessionGetCurrentV1Response> localVarResponse = await ActivesessionGetCurrentV1WithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<CommonGetAutocompleteV1Response> localVarResponse = await FranchiseofficeGetAutocompleteV1WithHttpInfoAsync(sSelector, sQuery, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get Current Activesession Retrieve the details about the current activesession
+        /// Retrieve Franchiseoffices and IDs Get the list of Franchiseoffices to be used in a dropdown or autocomplete control.
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="sSelector">The type of Franchiseoffices to return</param>
+        /// <param name="sQuery">Allow to filter on the option value (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (ActivesessionGetCurrentV1Response)</returns>
-        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<ActivesessionGetCurrentV1Response>> ActivesessionGetCurrentV1WithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (CommonGetAutocompleteV1Response)</returns>
+        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<CommonGetAutocompleteV1Response>> FranchiseofficeGetAutocompleteV1WithHttpInfoAsync(string sSelector, string sQuery = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
+            // verify the required parameter 'sSelector' is set
+            if (sSelector == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'sSelector' when calling FranchiseofficeApi->FranchiseofficeGetAutocompleteV1");
+
 
             eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
 
@@ -287,6 +316,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
+            localVarRequestOptions.PathParameters.Add("sSelector", eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.ParameterToString(sSelector)); // path parameter
+            if (sQuery != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.ParameterToMultiMap("", "sQuery", sQuery));
+            }
 
             // authentication (Authorization) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -296,11 +330,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<ActivesessionGetCurrentV1Response>("/1/object/activesession/getCurrent", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<CommonGetAutocompleteV1Response>("/1/object/franchiseoffice/getAutocomplete/{sSelector}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ActivesessionGetCurrentV1", localVarResponse);
+                Exception _exception = this.ExceptionFactory("FranchiseofficeGetAutocompleteV1", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 

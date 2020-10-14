@@ -84,6 +84,7 @@ docs/FieldEEzsignfolderSendreminderfrequency.md
 docs/FieldEEzsignfolderStep.md
 docs/FieldEPhoneType.md
 docs/FranchisebrokerApi.md
+docs/FranchiseofficeApi.md
 docs/FranchisereferalincomeApi.md
 docs/FranchisereferalincomeCreateObjectV1Request.md
 docs/FranchisereferalincomeCreateObjectV1Response.md
@@ -106,6 +107,7 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/EzsignfolderApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/EzsignfoldersignerassociationApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/EzsignsignatureApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/FranchisebrokerApiTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/FranchiseofficeApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/FranchisereferalincomeApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/PeriodApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/ActivesessionGetCurrentV1ResponseMPayloadTests.cs
@@ -203,6 +205,7 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/EzsignfolderApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/EzsignfoldersignerassociationApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/EzsignsignatureApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/FranchisebrokerApi.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/FranchiseofficeApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/FranchisereferalincomeApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/PeriodApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Client/ApiClient.cs
@@ -221,6 +224,7 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Client/Multimap.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Client/OpenAPIDateConverter.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Client/RequestOptions.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Client/RetryConfiguration.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/AbstractOpenAPISchema.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/ActivesessionGetCurrentV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/ActivesessionGetCurrentV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/AddressRequest.cs

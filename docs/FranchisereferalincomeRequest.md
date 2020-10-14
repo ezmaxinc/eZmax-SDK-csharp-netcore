@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **dFranchisereferalincomeAgentamount** | **string** | The amount that will be given to the agent | 
 **dtFranchisereferalincomeDisbursed** | **string** | The date the amounts were disbursed | 
 **tFranchisereferalincomeComment** | **string** | A comment about the transaction | 
+**fkiFranchiseofficeID** | **int** | The unique ID of the Franchisereoffice | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
