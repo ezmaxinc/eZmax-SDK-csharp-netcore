@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **pksCustomerCode** | **string** | The Customer Code in which the event was generated | 
 **sWebhookUrl** | **string** | The url being called | 
 **sWebhookEmailfailed** | **string** | The email that will receive the webhook in case all attempts fail. | 
+**eWebhookManagementevent** | **string** | This Management Event. This property will be set only if the Module is \&quot;Management\&quot;. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
