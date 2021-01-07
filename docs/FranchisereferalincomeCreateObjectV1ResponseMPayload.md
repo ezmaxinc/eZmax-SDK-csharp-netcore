@@ -1,5 +1,5 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.FranchisereferalincomeCreateObjectV1ResponseMPayload
-Payload for the /1/object/franchisereferalincome/editObject API Request
+Payload for the /1/object/franchisereferalincome/createObject API Request
 ## Properties
 
 Name | Type | Description | Notes

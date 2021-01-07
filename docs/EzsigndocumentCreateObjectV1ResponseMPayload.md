@@ -1,5 +1,5 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsigndocumentCreateObjectV1ResponseMPayload
-Payload for the /1/object/ezsigndocument/editObject API Request
+Payload for the /1/object/ezsigndocument/createObject API Request
 ## Properties
 
 Name | Type | Description | Notes
