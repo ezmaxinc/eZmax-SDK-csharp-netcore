@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **sUserFirstname** | **string** | The First name of the user | 
 **sUserLastname** | **string** | The Last name of the user | 
 **sUserLoginname** | **string** | The Login name of the User. | 
+**objAudit** | [**CommonAudit**](CommonAudit.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
