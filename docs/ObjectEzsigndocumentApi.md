@@ -8,8 +8,8 @@ Method | HTTP request | Description
 [**EzsigndocumentCreateObjectV1**](ObjectEzsigndocumentApi.md#ezsigndocumentcreateobjectv1) | **POST** /1/object/ezsigndocument | Create a new Ezsigndocument
 [**EzsigndocumentDeleteObjectV1**](ObjectEzsigndocumentApi.md#ezsigndocumentdeleteobjectv1) | **DELETE** /1/object/ezsigndocument/{pkiEzsigndocumentID} | Delete an existing Ezsigndocument
 [**EzsigndocumentEditObjectV1**](ObjectEzsigndocumentApi.md#ezsigndocumenteditobjectv1) | **PUT** /1/object/ezsigndocument/{pkiEzsigndocumentID} | Modify an existing Ezsigndocument
+[**EzsigndocumentGetChildrenV1**](ObjectEzsigndocumentApi.md#ezsigndocumentgetchildrenv1) | **GET** /1/object/ezsigndocument/{pkiEzsigndocumentID}/getChildren | Retrieve an existing Ezsigndocument&#39;s children IDs
 [**EzsigndocumentGetDownloadUrlV1**](ObjectEzsigndocumentApi.md#ezsigndocumentgetdownloadurlv1) | **GET** /1/object/ezsigndocument/{pkiEzsigndocumentID}/getDownloadUrl/{eDocumentType} | Retrieve a URL to download documents.
-[**EzsigndocumentGetObjectGetChildrenV1**](ObjectEzsigndocumentApi.md#ezsigndocumentgetobjectgetchildrenv1) | **GET** /1/object/ezsigndocument/{pkiEzsigndocumentID}/getChildren | Retrieve an existing Ezsigndocument&#39;s children IDs
 [**EzsigndocumentGetObjectV1**](ObjectEzsigndocumentApi.md#ezsigndocumentgetobjectv1) | **GET** /1/object/ezsigndocument/{pkiEzsigndocumentID} | Retrieve an existing Ezsigndocument
 
 
@@ -318,6 +318,78 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="ezsigndocumentgetchildrenv1"></a>
+# **EzsigndocumentGetChildrenV1**
+> void EzsigndocumentGetChildrenV1 (int pkiEzsigndocumentID)
+
+Retrieve an existing Ezsigndocument's children IDs
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+
+namespace Example
+{
+    public class EzsigndocumentGetChildrenV1Example
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://prod.api.appcluster01.ca-central-1.ezmax.com/rest";
+            // Configure API key authorization: Authorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new ObjectEzsigndocumentApi(config);
+            var pkiEzsigndocumentID = 56;  // int | The unique ID of the Ezsigndocument
+
+            try
+            {
+                // Retrieve an existing Ezsigndocument's children IDs
+                apiInstance.EzsigndocumentGetChildrenV1(pkiEzsigndocumentID);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ObjectEzsigndocumentApi.EzsigndocumentGetChildrenV1: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pkiEzsigndocumentID** | **int**| The unique ID of the Ezsigndocument | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[Authorization](../README.md#Authorization)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **404** | The element you are trying to work on does not exist |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="ezsigndocumentgetdownloadurlv1"></a>
 # **EzsigndocumentGetDownloadUrlV1**
 > EzsigndocumentGetDownloadUrlV1Response EzsigndocumentGetDownloadUrlV1 (int pkiEzsigndocumentID, string eDocumentType)
@@ -394,78 +466,6 @@ Name | Type | Description  | Notes
 | **200** | Successful response |  -  |
 | **404** | The element you are trying to work on does not exist |  -  |
 | **422** | The syntax of the request is valid but the request cannot be completed. Look for detail in body. |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="ezsigndocumentgetobjectgetchildrenv1"></a>
-# **EzsigndocumentGetObjectGetChildrenV1**
-> void EzsigndocumentGetObjectGetChildrenV1 (int pkiEzsigndocumentID)
-
-Retrieve an existing Ezsigndocument's children IDs
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
-
-namespace Example
-{
-    public class EzsigndocumentGetObjectGetChildrenV1Example
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://prod.api.appcluster01.ca-central-1.ezmax.com/rest";
-            // Configure API key authorization: Authorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new ObjectEzsigndocumentApi(config);
-            var pkiEzsigndocumentID = 56;  // int | The unique ID of the Ezsigndocument
-
-            try
-            {
-                // Retrieve an existing Ezsigndocument's children IDs
-                apiInstance.EzsigndocumentGetObjectGetChildrenV1(pkiEzsigndocumentID);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling ObjectEzsigndocumentApi.EzsigndocumentGetObjectGetChildrenV1: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pkiEzsigndocumentID** | **int**| The unique ID of the Ezsigndocument | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[Authorization](../README.md#Authorization)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **404** | The element you are trying to work on does not exist |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

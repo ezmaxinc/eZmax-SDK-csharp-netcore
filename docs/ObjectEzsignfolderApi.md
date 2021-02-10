@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**EzsignfolderCreateObjectV1**](ObjectEzsignfolderApi.md#ezsignfoldercreateobjectv1) | **POST** /1/object/ezsignfolder | Create a new Ezsignfolder
 [**EzsignfolderDeleteObjectV1**](ObjectEzsignfolderApi.md#ezsignfolderdeleteobjectv1) | **DELETE** /1/object/ezsignfolder/{pkiEzsignfolderID} | Delete an existing Ezsignfolder
 [**EzsignfolderEditObjectV1**](ObjectEzsignfolderApi.md#ezsignfoldereditobjectv1) | **PUT** /1/object/ezsignfolder/{pkiEzsignfolderID} | Modify an existing Ezsignfolder
-[**EzsignfolderGetObjectGetChildrenV1**](ObjectEzsignfolderApi.md#ezsignfoldergetobjectgetchildrenv1) | **GET** /1/object/ezsignfolder/{pkiEzsignfolderID}/getChildren | Retrieve an existing Ezsignfolder&#39;s children IDs
+[**EzsignfolderGetChildrenV1**](ObjectEzsignfolderApi.md#ezsignfoldergetchildrenv1) | **GET** /1/object/ezsignfolder/{pkiEzsignfolderID}/getChildren | Retrieve an existing Ezsignfolder&#39;s children IDs
 [**EzsignfolderGetObjectV1**](ObjectEzsignfolderApi.md#ezsignfoldergetobjectv1) | **GET** /1/object/ezsignfolder/{pkiEzsignfolderID} | Retrieve an existing Ezsignfolder
 [**EzsignfolderSendV1**](ObjectEzsignfolderApi.md#ezsignfoldersendv1) | **POST** /1/object/ezsignfolder/{pkiEzsignfolderID}/send | Send the Ezsignfolder to the signatories for signature
 
@@ -238,9 +238,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="ezsignfoldergetobjectgetchildrenv1"></a>
-# **EzsignfolderGetObjectGetChildrenV1**
-> void EzsignfolderGetObjectGetChildrenV1 (int pkiEzsignfolderID)
+<a name="ezsignfoldergetchildrenv1"></a>
+# **EzsignfolderGetChildrenV1**
+> void EzsignfolderGetChildrenV1 (int pkiEzsignfolderID)
 
 Retrieve an existing Ezsignfolder's children IDs
 
@@ -254,7 +254,7 @@ using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
 
 namespace Example
 {
-    public class EzsignfolderGetObjectGetChildrenV1Example
+    public class EzsignfolderGetChildrenV1Example
     {
         public static void Main()
         {
@@ -271,11 +271,11 @@ namespace Example
             try
             {
                 // Retrieve an existing Ezsignfolder's children IDs
-                apiInstance.EzsignfolderGetObjectGetChildrenV1(pkiEzsignfolderID);
+                apiInstance.EzsignfolderGetChildrenV1(pkiEzsignfolderID);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ObjectEzsignfolderApi.EzsignfolderGetObjectGetChildrenV1: " + e.Message );
+                Debug.Print("Exception when calling ObjectEzsignfolderApi.EzsignfolderGetChildrenV1: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
