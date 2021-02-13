@@ -94,6 +94,7 @@ docs/FranchisereferalincomeRequest.md
 docs/FranchisereferalincomeRequestCompound.md
 docs/GlobalCustomerApi.md
 docs/GlobalCustomerGetEndpointV1Response.md
+docs/ModuleSsprApi.md
 docs/ModuleUserApi.md
 docs/MultilingualApikeyDescription.md
 docs/ObjectActivesessionApi.md
@@ -123,6 +124,7 @@ docs/WebsiteRequest.md
 eZmaxinc/eZmax-SDK-csharp-netcore.sln
 git_push.sh
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/GlobalCustomerApiTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/ModuleSsprApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/ModuleUserApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/ObjectActivesessionApiTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Api/ObjectApikeyApiTests.cs
@@ -242,6 +244,7 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/WebhookUserUserCreatedTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/WebsiteRequestTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/eZmaxinc/eZmax-SDK-csharp-netcore.Test.csproj
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/GlobalCustomerApi.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/ModuleSsprApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/ModuleUserApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/ObjectActivesessionApi.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Api/ObjectApikeyApi.cs
