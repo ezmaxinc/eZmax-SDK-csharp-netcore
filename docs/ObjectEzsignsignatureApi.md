@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**EzsignsignatureCreateObjectV1**](ObjectEzsignsignatureApi.md#ezsignsignaturecreateobjectv1) | **POST** /1/object/ezsignsignature | Create a new Ezsignsignature
 [**EzsignsignatureDeleteObjectV1**](ObjectEzsignsignatureApi.md#ezsignsignaturedeleteobjectv1) | **DELETE** /1/object/ezsignsignature/{pkiEzsignsignatureID} | Delete an existing Ezsignsignature
-[**EzsignsignatureEditObjectV1**](ObjectEzsignsignatureApi.md#ezsignsignatureeditobjectv1) | **PUT** /1/object/ezsignsignature/{pkiEzsignsignatureID} | Modify an existing Ezsignsignature
 [**EzsignsignatureGetChildrenV1**](ObjectEzsignsignatureApi.md#ezsignsignaturegetchildrenv1) | **GET** /1/object/ezsignsignature/{pkiEzsignsignatureID}/getChildren | Retrieve an existing Ezsignsignature&#39;s children IDs
 [**EzsignsignatureGetObjectV1**](ObjectEzsignsignatureApi.md#ezsignsignaturegetobjectv1) | **GET** /1/object/ezsignsignature/{pkiEzsignsignatureID} | Retrieve an existing Ezsignsignature
 
@@ -158,82 +157,6 @@ Name | Type | Description  | Notes
 | **200** | Successful response |  -  |
 | **404** | The element you are trying to work on does not exist |  -  |
 | **422** | The syntax of the request is valid but the request cannot be completed. Look for detail in body. |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="ezsignsignatureeditobjectv1"></a>
-# **EzsignsignatureEditObjectV1**
-> EzsignsignatureEditObjectV1Response EzsignsignatureEditObjectV1 (int pkiEzsignsignatureID, EzsignsignatureEditObjectV1Request ezsignsignatureEditObjectV1Request)
-
-Modify an existing Ezsignsignature
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
-
-namespace Example
-{
-    public class EzsignsignatureEditObjectV1Example
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://prod.api.appcluster01.ca-central-1.ezmax.com/rest";
-            // Configure API key authorization: Authorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new ObjectEzsignsignatureApi(config);
-            var pkiEzsignsignatureID = 56;  // int | The unique ID of the Ezsignsignature
-            var ezsignsignatureEditObjectV1Request = new EzsignsignatureEditObjectV1Request(); // EzsignsignatureEditObjectV1Request | 
-
-            try
-            {
-                // Modify an existing Ezsignsignature
-                EzsignsignatureEditObjectV1Response result = apiInstance.EzsignsignatureEditObjectV1(pkiEzsignsignatureID, ezsignsignatureEditObjectV1Request);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling ObjectEzsignsignatureApi.EzsignsignatureEditObjectV1: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pkiEzsignsignatureID** | **int**| The unique ID of the Ezsignsignature | 
- **ezsignsignatureEditObjectV1Request** | [**EzsignsignatureEditObjectV1Request**](EzsignsignatureEditObjectV1Request.md)|  | 
-
-### Return type
-
-[**EzsignsignatureEditObjectV1Response**](EzsignsignatureEditObjectV1Response.md)
-
-### Authorization
-
-[Authorization](../README.md#Authorization)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful response |  -  |
-| **404** | The element you are trying to work on does not exist |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

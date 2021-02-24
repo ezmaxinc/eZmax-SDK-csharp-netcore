@@ -1,5 +1,5 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignfolderEditObjectV1Response
-Response for the /1/object/ezsignfolder/editObject API Request
+# eZmaxinc/eZmax-SDK-csharp-netcore.Model.UNUSEDEzsignfoldersignerassociationEditObjectV1Response
+Response for the /1/object/ezsignfoldersignerassociation/editObject API Request
 ## Properties
 
 Name | Type | Description | Notes

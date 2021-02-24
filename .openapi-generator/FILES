@@ -33,8 +33,6 @@ docs/EzsigndocumentCreateObjectV1Request.md
 docs/EzsigndocumentCreateObjectV1Response.md
 docs/EzsigndocumentCreateObjectV1ResponseMPayload.md
 docs/EzsigndocumentDeleteObjectV1Response.md
-docs/EzsigndocumentEditObjectV1Request.md
-docs/EzsigndocumentEditObjectV1Response.md
 docs/EzsigndocumentGetDownloadUrlV1Response.md
 docs/EzsigndocumentGetDownloadUrlV1ResponseMPayload.md
 docs/EzsigndocumentGetObjectV1Response.md
@@ -48,8 +46,6 @@ docs/EzsignfolderCreateObjectV1Request.md
 docs/EzsignfolderCreateObjectV1Response.md
 docs/EzsignfolderCreateObjectV1ResponseMPayload.md
 docs/EzsignfolderDeleteObjectV1Response.md
-docs/EzsignfolderEditObjectV1Request.md
-docs/EzsignfolderEditObjectV1Response.md
 docs/EzsignfolderGetObjectV1Response.md
 docs/EzsignfolderGetObjectV1ResponseMPayload.md
 docs/EzsignfolderRequest.md
@@ -63,8 +59,6 @@ docs/EzsignfoldersignerassociationCreateObjectV1Request.md
 docs/EzsignfoldersignerassociationCreateObjectV1Response.md
 docs/EzsignfoldersignerassociationCreateObjectV1ResponseMPayload.md
 docs/EzsignfoldersignerassociationDeleteObjectV1Response.md
-docs/EzsignfoldersignerassociationEditObjectV1Request.md
-docs/EzsignfoldersignerassociationEditObjectV1Response.md
 docs/EzsignfoldersignerassociationGetInPersonLoginUrlV1Response.md
 docs/EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayload.md
 docs/EzsignfoldersignerassociationGetObjectV1Response.md
@@ -74,8 +68,6 @@ docs/EzsignsignatureCreateObjectV1Request.md
 docs/EzsignsignatureCreateObjectV1Response.md
 docs/EzsignsignatureCreateObjectV1ResponseMPayload.md
 docs/EzsignsignatureDeleteObjectV1Response.md
-docs/EzsignsignatureEditObjectV1Request.md
-docs/EzsignsignatureEditObjectV1Response.md
 docs/EzsignsignatureGetObjectV1Response.md
 docs/EzsignsignatureRequest.md
 docs/EzsignsignatureRequestCompound.md
@@ -108,6 +100,14 @@ docs/ObjectFranchiseofficeApi.md
 docs/ObjectFranchisereferalincomeApi.md
 docs/ObjectPeriodApi.md
 docs/PhoneRequest.md
+docs/UNUSEDEzsigndocumentEditObjectV1Request.md
+docs/UNUSEDEzsigndocumentEditObjectV1Response.md
+docs/UNUSEDEzsignfolderEditObjectV1Request.md
+docs/UNUSEDEzsignfolderEditObjectV1Response.md
+docs/UNUSEDEzsignfoldersignerassociationEditObjectV1Request.md
+docs/UNUSEDEzsignfoldersignerassociationEditObjectV1Response.md
+docs/UNUSEDEzsignsignatureEditObjectV1Request.md
+docs/UNUSEDEzsignsignatureEditObjectV1Response.md
 docs/UserCreateEzsignuserV1Request.md
 docs/UserCreateEzsignuserV1Response.md
 docs/UserCreateEzsignuserV1ResponseMPayload.md
@@ -167,8 +167,6 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentCreateObjectV1Req
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentCreateObjectV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentCreateObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentDeleteObjectV1ResponseTests.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentEditObjectV1RequestTests.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentEditObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentGetDownloadUrlV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentGetDownloadUrlV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsigndocumentGetObjectV1ResponseMPayloadTests.cs
@@ -182,8 +180,6 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderCreateObjectV1Reque
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderCreateObjectV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderCreateObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderDeleteObjectV1ResponseTests.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderEditObjectV1RequestTests.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderEditObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderGetObjectV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderGetObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfolderRequestCompoundTests.cs
@@ -197,8 +193,6 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationCr
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationCreateObjectV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationCreateObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationDeleteObjectV1ResponseTests.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationEditObjectV1RequestTests.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationEditObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignfoldersignerassociationGetObjectV1ResponseTests.cs
@@ -208,8 +202,6 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureCreateObjectV1Re
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureCreateObjectV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureCreateObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureDeleteObjectV1ResponseTests.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureEditObjectV1RequestTests.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureEditObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureGetObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureRequestCompoundTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/EzsignsignatureRequestTests.cs
@@ -229,6 +221,14 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FranchisereferalincomeRequestTe
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/GlobalCustomerGetEndpointV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/MultilingualApikeyDescriptionTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/PhoneRequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsigndocumentEditObjectV1RequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsigndocumentEditObjectV1ResponseTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsignfolderEditObjectV1RequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsignfolderEditObjectV1ResponseTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsignfoldersignerassociationEditObjectV1RequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsignfoldersignerassociationEditObjectV1ResponseTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsignsignatureEditObjectV1RequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsignsignatureEditObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UserCreateEzsignuserV1RequestTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UserCreateEzsignuserV1ResponseMPayloadTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UserCreateEzsignuserV1ResponseTests.cs
@@ -304,8 +304,6 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentCreateObjectV1Request.
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentCreateObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentCreateObjectV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentDeleteObjectV1Response.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentEditObjectV1Request.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentEditObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentGetDownloadUrlV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentGetDownloadUrlV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsigndocumentGetObjectV1Response.cs
@@ -319,8 +317,6 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderCreateObjectV1Request.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderCreateObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderCreateObjectV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderDeleteObjectV1Response.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderEditObjectV1Request.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderEditObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderGetObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderGetObjectV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfolderRequest.cs
@@ -334,8 +330,6 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationCreateO
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationCreateObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationCreateObjectV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationDeleteObjectV1Response.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationEditObjectV1Request.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationEditObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationGetInPersonLoginUrlV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignfoldersignerassociationGetObjectV1Response.cs
@@ -345,8 +339,6 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureCreateObjectV1Request
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureCreateObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureCreateObjectV1ResponseMPayload.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureDeleteObjectV1Response.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureEditObjectV1Request.cs
-src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureEditObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureGetObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureRequest.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/EzsignsignatureRequestCompound.cs
@@ -366,6 +358,14 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FranchisereferalincomeRequestCompoun
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/GlobalCustomerGetEndpointV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/MultilingualApikeyDescription.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/PhoneRequest.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsigndocumentEditObjectV1Request.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsigndocumentEditObjectV1Response.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsignfolderEditObjectV1Request.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsignfolderEditObjectV1Response.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsignfoldersignerassociationEditObjectV1Request.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsignfoldersignerassociationEditObjectV1Response.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsignsignatureEditObjectV1Request.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsignsignatureEditObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UserCreateEzsignuserV1Request.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UserCreateEzsignuserV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UserCreateEzsignuserV1ResponseMPayload.cs

@@ -1,5 +1,5 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignsignatureEditObjectV1Response
-Response for the /1/object/ezsignsignature/editObject API Request
+# eZmaxinc/eZmax-SDK-csharp-netcore.Model.UNUSEDEzsigndocumentEditObjectV1Response
+Response for the /1/object/ezsigndocument/editObject API Request
 ## Properties
 
 Name | Type | Description | Notes

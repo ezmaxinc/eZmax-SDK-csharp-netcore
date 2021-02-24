@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignfoldersignerassociationEditObjectV1Request
+# eZmaxinc/eZmax-SDK-csharp-netcore.Model.UNUSEDEzsignfoldersignerassociationEditObjectV1Request
 Request for the /1/object/ezsignfoldersignerassociation/editObject API Request
 ## Properties
 
