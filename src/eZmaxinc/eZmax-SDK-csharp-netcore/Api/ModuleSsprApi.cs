@@ -28,24 +28,110 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
     {
         #region Synchronous Operations
         /// <summary>
-        /// Remind of forgotten username(s)
+        /// Reset Password Request
         /// </summary>
         /// <remarks>
-        /// This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// This endpoint sends an email with a link to reset the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordRequestV1Request"></param>
         /// <returns></returns>
-        void SsprRemindUsernamesV1();
+        void SsprResetPasswordRequestV1(SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request);
 
         /// <summary>
-        /// Remind of forgotten username(s)
+        /// Reset Password Request
+        /// </summary>
+        /// <remarks>
+        /// This endpoint sends an email with a link to reset the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordRequestV1Request"></param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> SsprResetPasswordRequestV1WithHttpInfo(SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request);
+        /// <summary>
+        /// Reset Password
+        /// </summary>
+        /// <remarks>
+        /// This endpoint resets the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordV1Request"></param>
+        /// <returns></returns>
+        void SsprResetPasswordV1(SsprResetPasswordV1Request ssprResetPasswordV1Request);
+
+        /// <summary>
+        /// Reset Password
+        /// </summary>
+        /// <remarks>
+        /// This endpoint resets the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordV1Request"></param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> SsprResetPasswordV1WithHttpInfo(SsprResetPasswordV1Request ssprResetPasswordV1Request);
+        /// <summary>
+        /// Send username(s)
         /// </summary>
         /// <remarks>
         /// This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprSendUsernamesV1Request"></param>
+        /// <returns></returns>
+        void SsprSendUsernamesV1(SsprSendUsernamesV1Request ssprSendUsernamesV1Request);
+
+        /// <summary>
+        /// Send username(s)
+        /// </summary>
+        /// <remarks>
+        /// This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprSendUsernamesV1Request"></param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> SsprRemindUsernamesV1WithHttpInfo();
+        ApiResponse<Object> SsprSendUsernamesV1WithHttpInfo(SsprSendUsernamesV1Request ssprSendUsernamesV1Request);
+        /// <summary>
+        /// Unlock Account Request
+        /// </summary>
+        /// <remarks>
+        /// This endpoint sends an email with a link to unlock the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountRequestV1Request"></param>
+        /// <returns></returns>
+        void SsprUnlockAccountRequestV1(SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request);
+
+        /// <summary>
+        /// Unlock Account Request
+        /// </summary>
+        /// <remarks>
+        /// This endpoint sends an email with a link to unlock the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountRequestV1Request"></param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> SsprUnlockAccountRequestV1WithHttpInfo(SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request);
+        /// <summary>
+        /// Unlock Account
+        /// </summary>
+        /// <remarks>
+        /// This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountV1Request"></param>
+        /// <returns></returns>
+        void SsprUnlockAccountV1(SsprUnlockAccountV1Request ssprUnlockAccountV1Request);
+
+        /// <summary>
+        /// Unlock Account
+        /// </summary>
+        /// <remarks>
+        /// This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountV1Request"></param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> SsprUnlockAccountV1WithHttpInfo(SsprUnlockAccountV1Request ssprUnlockAccountV1Request);
         #endregion Synchronous Operations
     }
 
@@ -56,26 +142,120 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
     {
         #region Asynchronous Operations
         /// <summary>
-        /// Remind of forgotten username(s)
+        /// Reset Password Request
         /// </summary>
         /// <remarks>
-        /// This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// This endpoint sends an email with a link to reset the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordRequestV1Request"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task SsprRemindUsernamesV1Async(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task SsprResetPasswordRequestV1Async(SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
-        /// Remind of forgotten username(s)
+        /// Reset Password Request
+        /// </summary>
+        /// <remarks>
+        /// This endpoint sends an email with a link to reset the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordRequestV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> SsprResetPasswordRequestV1WithHttpInfoAsync(SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// Reset Password
+        /// </summary>
+        /// <remarks>
+        /// This endpoint resets the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task SsprResetPasswordV1Async(SsprResetPasswordV1Request ssprResetPasswordV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// Reset Password
+        /// </summary>
+        /// <remarks>
+        /// This endpoint resets the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> SsprResetPasswordV1WithHttpInfoAsync(SsprResetPasswordV1Request ssprResetPasswordV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// Send username(s)
         /// </summary>
         /// <remarks>
         /// This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
         /// </remarks>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprSendUsernamesV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task SsprSendUsernamesV1Async(SsprSendUsernamesV1Request ssprSendUsernamesV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// Send username(s)
+        /// </summary>
+        /// <remarks>
+        /// This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprSendUsernamesV1Request"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> SsprRemindUsernamesV1WithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> SsprSendUsernamesV1WithHttpInfoAsync(SsprSendUsernamesV1Request ssprSendUsernamesV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// Unlock Account Request
+        /// </summary>
+        /// <remarks>
+        /// This endpoint sends an email with a link to unlock the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountRequestV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task SsprUnlockAccountRequestV1Async(SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// Unlock Account Request
+        /// </summary>
+        /// <remarks>
+        /// This endpoint sends an email with a link to unlock the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountRequestV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> SsprUnlockAccountRequestV1WithHttpInfoAsync(SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// Unlock Account
+        /// </summary>
+        /// <remarks>
+        /// This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task SsprUnlockAccountV1Async(SsprUnlockAccountV1Request ssprUnlockAccountV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// Unlock Account
+        /// </summary>
+        /// <remarks>
+        /// This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </remarks>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> SsprUnlockAccountV1WithHttpInfoAsync(SsprUnlockAccountV1Request ssprUnlockAccountV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -197,25 +377,32 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Remind of forgotten username(s) This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// Reset Password Request This endpoint sends an email with a link to reset the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordRequestV1Request"></param>
         /// <returns></returns>
-        public void SsprRemindUsernamesV1()
+        public void SsprResetPasswordRequestV1(SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request)
         {
-            SsprRemindUsernamesV1WithHttpInfo();
+            SsprResetPasswordRequestV1WithHttpInfo(ssprResetPasswordRequestV1Request);
         }
 
         /// <summary>
-        /// Remind of forgotten username(s) This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// Reset Password Request This endpoint sends an email with a link to reset the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordRequestV1Request"></param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object> SsprRemindUsernamesV1WithHttpInfo()
+        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object> SsprResetPasswordRequestV1WithHttpInfo(SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request)
         {
+            // verify the required parameter 'ssprResetPasswordRequestV1Request' is set
+            if (ssprResetPasswordRequestV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprResetPasswordRequestV1Request' when calling ModuleSsprApi->SsprResetPasswordRequestV1");
+
             eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json"
             };
 
             // to determine the Accept header
@@ -229,6 +416,7 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
+            localVarRequestOptions.Data = ssprResetPasswordRequestV1Request;
 
             // authentication (Authorization) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -237,11 +425,11 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<Object>("/1/module/sspr/remindUsernames", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<Object>("/1/module/sspr/resetPasswordRequest/", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("SsprRemindUsernamesV1", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SsprResetPasswordRequestV1", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -249,28 +437,35 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
         }
 
         /// <summary>
-        /// Remind of forgotten username(s) This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// Reset Password Request This endpoint sends an email with a link to reset the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordRequestV1Request"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task SsprRemindUsernamesV1Async(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task SsprResetPasswordRequestV1Async(SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await SsprRemindUsernamesV1WithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
+            await SsprResetPasswordRequestV1WithHttpInfoAsync(ssprResetPasswordRequestV1Request, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
-        /// Remind of forgotten username(s) This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// Reset Password Request This endpoint sends an email with a link to reset the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
         /// </summary>
         /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordRequestV1Request"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object>> SsprRemindUsernamesV1WithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object>> SsprResetPasswordRequestV1WithHttpInfoAsync(SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
+            // verify the required parameter 'ssprResetPasswordRequestV1Request' is set
+            if (ssprResetPasswordRequestV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprResetPasswordRequestV1Request' when calling ModuleSsprApi->SsprResetPasswordRequestV1");
+
 
             eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json"
             };
 
             // to determine the Accept header
@@ -285,6 +480,7 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
             var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
+            localVarRequestOptions.Data = ssprResetPasswordRequestV1Request;
 
             // authentication (Authorization) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -294,11 +490,511 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/1/module/sspr/remindUsernames", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/1/module/sspr/resetPasswordRequest/", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("SsprRemindUsernamesV1", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SsprResetPasswordRequestV1", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Reset Password This endpoint resets the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordV1Request"></param>
+        /// <returns></returns>
+        public void SsprResetPasswordV1(SsprResetPasswordV1Request ssprResetPasswordV1Request)
+        {
+            SsprResetPasswordV1WithHttpInfo(ssprResetPasswordV1Request);
+        }
+
+        /// <summary>
+        /// Reset Password This endpoint resets the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordV1Request"></param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object> SsprResetPasswordV1WithHttpInfo(SsprResetPasswordV1Request ssprResetPasswordV1Request)
+        {
+            // verify the required parameter 'ssprResetPasswordV1Request' is set
+            if (ssprResetPasswordV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprResetPasswordV1Request' when calling ModuleSsprApi->SsprResetPasswordV1");
+
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json"
+            };
+
+            var localVarContentType = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = ssprResetPasswordV1Request;
+
+            // authentication (Authorization) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/1/module/sspr/resetPassword", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("SsprResetPasswordV1", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Reset Password This endpoint resets the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task SsprResetPasswordV1Async(SsprResetPasswordV1Request ssprResetPasswordV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            await SsprResetPasswordV1WithHttpInfoAsync(ssprResetPasswordV1Request, cancellationToken).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Reset Password This endpoint resets the user&#39;s password.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprResetPasswordV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object>> SsprResetPasswordV1WithHttpInfoAsync(SsprResetPasswordV1Request ssprResetPasswordV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'ssprResetPasswordV1Request' is set
+            if (ssprResetPasswordV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprResetPasswordV1Request' when calling ModuleSsprApi->SsprResetPasswordV1");
+
+
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json"
+            };
+
+
+            var localVarContentType = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = ssprResetPasswordV1Request;
+
+            // authentication (Authorization) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/1/module/sspr/resetPassword", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("SsprResetPasswordV1", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Send username(s) This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprSendUsernamesV1Request"></param>
+        /// <returns></returns>
+        public void SsprSendUsernamesV1(SsprSendUsernamesV1Request ssprSendUsernamesV1Request)
+        {
+            SsprSendUsernamesV1WithHttpInfo(ssprSendUsernamesV1Request);
+        }
+
+        /// <summary>
+        /// Send username(s) This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprSendUsernamesV1Request"></param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object> SsprSendUsernamesV1WithHttpInfo(SsprSendUsernamesV1Request ssprSendUsernamesV1Request)
+        {
+            // verify the required parameter 'ssprSendUsernamesV1Request' is set
+            if (ssprSendUsernamesV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprSendUsernamesV1Request' when calling ModuleSsprApi->SsprSendUsernamesV1");
+
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json"
+            };
+
+            var localVarContentType = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = ssprSendUsernamesV1Request;
+
+            // authentication (Authorization) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/1/module/sspr/sendUsernames", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("SsprSendUsernamesV1", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Send username(s) This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprSendUsernamesV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task SsprSendUsernamesV1Async(SsprSendUsernamesV1Request ssprSendUsernamesV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            await SsprSendUsernamesV1WithHttpInfoAsync(ssprSendUsernamesV1Request, cancellationToken).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Send username(s) This endpoint returns an email with the username(s) matching the email address provided in case of forgotten username
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprSendUsernamesV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object>> SsprSendUsernamesV1WithHttpInfoAsync(SsprSendUsernamesV1Request ssprSendUsernamesV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'ssprSendUsernamesV1Request' is set
+            if (ssprSendUsernamesV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprSendUsernamesV1Request' when calling ModuleSsprApi->SsprSendUsernamesV1");
+
+
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json"
+            };
+
+
+            var localVarContentType = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = ssprSendUsernamesV1Request;
+
+            // authentication (Authorization) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/1/module/sspr/sendUsernames", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("SsprSendUsernamesV1", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Unlock Account Request This endpoint sends an email with a link to unlock the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountRequestV1Request"></param>
+        /// <returns></returns>
+        public void SsprUnlockAccountRequestV1(SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request)
+        {
+            SsprUnlockAccountRequestV1WithHttpInfo(ssprUnlockAccountRequestV1Request);
+        }
+
+        /// <summary>
+        /// Unlock Account Request This endpoint sends an email with a link to unlock the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountRequestV1Request"></param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object> SsprUnlockAccountRequestV1WithHttpInfo(SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request)
+        {
+            // verify the required parameter 'ssprUnlockAccountRequestV1Request' is set
+            if (ssprUnlockAccountRequestV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprUnlockAccountRequestV1Request' when calling ModuleSsprApi->SsprUnlockAccountRequestV1");
+
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json"
+            };
+
+            var localVarContentType = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = ssprUnlockAccountRequestV1Request;
+
+            // authentication (Authorization) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/1/module/sspr/unlockAccountRequest", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("SsprUnlockAccountRequestV1", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Unlock Account Request This endpoint sends an email with a link to unlock the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountRequestV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task SsprUnlockAccountRequestV1Async(SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            await SsprUnlockAccountRequestV1WithHttpInfoAsync(ssprUnlockAccountRequestV1Request, cancellationToken).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Unlock Account Request This endpoint sends an email with a link to unlock the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountRequestV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object>> SsprUnlockAccountRequestV1WithHttpInfoAsync(SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'ssprUnlockAccountRequestV1Request' is set
+            if (ssprUnlockAccountRequestV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprUnlockAccountRequestV1Request' when calling ModuleSsprApi->SsprUnlockAccountRequestV1");
+
+
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json"
+            };
+
+
+            var localVarContentType = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = ssprUnlockAccountRequestV1Request;
+
+            // authentication (Authorization) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/1/module/sspr/unlockAccountRequest", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("SsprUnlockAccountRequestV1", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Unlock Account This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountV1Request"></param>
+        /// <returns></returns>
+        public void SsprUnlockAccountV1(SsprUnlockAccountV1Request ssprUnlockAccountV1Request)
+        {
+            SsprUnlockAccountV1WithHttpInfo(ssprUnlockAccountV1Request);
+        }
+
+        /// <summary>
+        /// Unlock Account This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountV1Request"></param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object> SsprUnlockAccountV1WithHttpInfo(SsprUnlockAccountV1Request ssprUnlockAccountV1Request)
+        {
+            // verify the required parameter 'ssprUnlockAccountV1Request' is set
+            if (ssprUnlockAccountV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprUnlockAccountV1Request' when calling ModuleSsprApi->SsprUnlockAccountV1");
+
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json"
+            };
+
+            var localVarContentType = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = ssprUnlockAccountV1Request;
+
+            // authentication (Authorization) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/1/module/sspr/unlockAccount", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("SsprUnlockAccountV1", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        /// Unlock Account This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task SsprUnlockAccountV1Async(SsprUnlockAccountV1Request ssprUnlockAccountV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            await SsprUnlockAccountV1WithHttpInfoAsync(ssprUnlockAccountV1Request, cancellationToken).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Unlock Account This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeSSPR &#x3D; EzsignUser  sUserLoginname must be set if eUserTypeSSPR &#x3D; Native
+        /// </summary>
+        /// <exception cref="eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="ssprUnlockAccountV1Request"></param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiResponse<Object>> SsprUnlockAccountV1WithHttpInfoAsync(SsprUnlockAccountV1Request ssprUnlockAccountV1Request, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            // verify the required parameter 'ssprUnlockAccountV1Request' is set
+            if (ssprUnlockAccountV1Request == null)
+                throw new eZmaxinc/eZmax-SDK-csharp-netcore.Client.ApiException(400, "Missing required parameter 'ssprUnlockAccountV1Request' when calling ModuleSsprApi->SsprUnlockAccountV1");
+
+
+            eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions localVarRequestOptions = new eZmaxinc/eZmax-SDK-csharp-netcore.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "application/json"
+            };
+
+
+            var localVarContentType = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = eZmaxinc/eZmax-SDK-csharp-netcore.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = ssprUnlockAccountV1Request;
+
+            // authentication (Authorization) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/1/module/sspr/unlockAccount", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("SsprUnlockAccountV1", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 

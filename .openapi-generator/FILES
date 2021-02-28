@@ -79,6 +79,7 @@ docs/FieldEEzsignfolderSendreminderfrequency.md
 docs/FieldEEzsignfolderStep.md
 docs/FieldEPhoneType.md
 docs/FieldEUserType.md
+docs/FieldEUserTypeSSPR.md
 docs/FranchisereferalincomeCreateObjectV1Request.md
 docs/FranchisereferalincomeCreateObjectV1Response.md
 docs/FranchisereferalincomeCreateObjectV1ResponseMPayload.md
@@ -100,6 +101,11 @@ docs/ObjectFranchiseofficeApi.md
 docs/ObjectFranchisereferalincomeApi.md
 docs/ObjectPeriodApi.md
 docs/PhoneRequest.md
+docs/SsprResetPasswordRequestV1Request.md
+docs/SsprResetPasswordV1Request.md
+docs/SsprSendUsernamesV1Request.md
+docs/SsprUnlockAccountRequestV1Request.md
+docs/SsprUnlockAccountV1Request.md
 docs/UNUSEDEzsigndocumentEditObjectV1Request.md
 docs/UNUSEDEzsigndocumentEditObjectV1Response.md
 docs/UNUSEDEzsignfolderEditObjectV1Request.md
@@ -212,6 +218,7 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FieldEEzsigndocumentStepTests.c
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FieldEEzsignfolderSendreminderfrequencyTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FieldEEzsignfolderStepTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FieldEPhoneTypeTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FieldEUserTypeSSPRTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FieldEUserTypeTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FranchisereferalincomeCreateObjectV1RequestTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FranchisereferalincomeCreateObjectV1ResponseMPayloadTests.cs
@@ -221,6 +228,11 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/FranchisereferalincomeRequestTe
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/GlobalCustomerGetEndpointV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/MultilingualApikeyDescriptionTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/PhoneRequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/SsprResetPasswordRequestV1RequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/SsprResetPasswordV1RequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/SsprSendUsernamesV1RequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/SsprUnlockAccountRequestV1RequestTests.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/SsprUnlockAccountV1RequestTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsigndocumentEditObjectV1RequestTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsigndocumentEditObjectV1ResponseTests.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore.Test/Model/UNUSEDEzsignfolderEditObjectV1RequestTests.cs
@@ -350,6 +362,7 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FieldEEzsignfolderSendreminderfreque
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FieldEEzsignfolderStep.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FieldEPhoneType.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FieldEUserType.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FieldEUserTypeSSPR.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FranchisereferalincomeCreateObjectV1Request.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FranchisereferalincomeCreateObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FranchisereferalincomeCreateObjectV1ResponseMPayload.cs
@@ -358,6 +371,11 @@ src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/FranchisereferalincomeRequestCompoun
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/GlobalCustomerGetEndpointV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/MultilingualApikeyDescription.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/PhoneRequest.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/SsprResetPasswordRequestV1Request.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/SsprResetPasswordV1Request.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/SsprSendUsernamesV1Request.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/SsprUnlockAccountRequestV1Request.cs
+src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/SsprUnlockAccountV1Request.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsigndocumentEditObjectV1Request.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsigndocumentEditObjectV1Response.cs
 src/eZmaxinc/eZmax-SDK-csharp-netcore/Model/UNUSEDEzsignfolderEditObjectV1Request.cs

@@ -120,7 +120,11 @@ All URIs are relative to *https://prod.api.appcluster01.ca-central-1.ezmax.com/r
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *GlobalCustomerApi* | [**GlobalCustomerGetEndpointV1**](docs/GlobalCustomerApi.md#globalcustomergetendpointv1) | **GET** /1/customer/{pksCustomerCode}/endpoint | Get customer endpoint
-*ModuleSsprApi* | [**SsprRemindUsernamesV1**](docs/ModuleSsprApi.md#ssprremindusernamesv1) | **POST** /1/module/sspr/remindUsernames | Remind of forgotten username(s)
+*ModuleSsprApi* | [**SsprResetPasswordRequestV1**](docs/ModuleSsprApi.md#ssprresetpasswordrequestv1) | **POST** /1/module/sspr/resetPasswordRequest/ | Reset Password Request
+*ModuleSsprApi* | [**SsprResetPasswordV1**](docs/ModuleSsprApi.md#ssprresetpasswordv1) | **POST** /1/module/sspr/resetPassword | Reset Password
+*ModuleSsprApi* | [**SsprSendUsernamesV1**](docs/ModuleSsprApi.md#ssprsendusernamesv1) | **POST** /1/module/sspr/sendUsernames | Send username(s)
+*ModuleSsprApi* | [**SsprUnlockAccountRequestV1**](docs/ModuleSsprApi.md#ssprunlockaccountrequestv1) | **POST** /1/module/sspr/unlockAccountRequest | Unlock Account Request
+*ModuleSsprApi* | [**SsprUnlockAccountV1**](docs/ModuleSsprApi.md#ssprunlockaccountv1) | **POST** /1/module/sspr/unlockAccount | Unlock Account
 *ModuleUserApi* | [**UserCreateEzsignuserV1**](docs/ModuleUserApi.md#usercreateezsignuserv1) | **POST** /1/module/user/createezsignuser | Create a new User of type Ezsignuser
 *ObjectActivesessionApi* | [**ActivesessionGetCurrentV1**](docs/ObjectActivesessionApi.md#activesessiongetcurrentv1) | **GET** /1/object/activesession/getCurrent | Get Current Activesession
 *ObjectApikeyApi* | [**ApikeyCreateObjectV1**](docs/ObjectApikeyApi.md#apikeycreateobjectv1) | **POST** /1/object/apikey | Create a new Apikey
@@ -230,6 +234,7 @@ Class | Method | HTTP request | Description
  - [Model.FieldEEzsignfolderStep](docs/FieldEEzsignfolderStep.md)
  - [Model.FieldEPhoneType](docs/FieldEPhoneType.md)
  - [Model.FieldEUserType](docs/FieldEUserType.md)
+ - [Model.FieldEUserTypeSSPR](docs/FieldEUserTypeSSPR.md)
  - [Model.FranchisereferalincomeCreateObjectV1Request](docs/FranchisereferalincomeCreateObjectV1Request.md)
  - [Model.FranchisereferalincomeCreateObjectV1Response](docs/FranchisereferalincomeCreateObjectV1Response.md)
  - [Model.FranchisereferalincomeCreateObjectV1ResponseMPayload](docs/FranchisereferalincomeCreateObjectV1ResponseMPayload.md)
@@ -238,6 +243,11 @@ Class | Method | HTTP request | Description
  - [Model.GlobalCustomerGetEndpointV1Response](docs/GlobalCustomerGetEndpointV1Response.md)
  - [Model.MultilingualApikeyDescription](docs/MultilingualApikeyDescription.md)
  - [Model.PhoneRequest](docs/PhoneRequest.md)
+ - [Model.SsprResetPasswordRequestV1Request](docs/SsprResetPasswordRequestV1Request.md)
+ - [Model.SsprResetPasswordV1Request](docs/SsprResetPasswordV1Request.md)
+ - [Model.SsprSendUsernamesV1Request](docs/SsprSendUsernamesV1Request.md)
+ - [Model.SsprUnlockAccountRequestV1Request](docs/SsprUnlockAccountRequestV1Request.md)
+ - [Model.SsprUnlockAccountV1Request](docs/SsprUnlockAccountV1Request.md)
  - [Model.UNUSEDEzsigndocumentEditObjectV1Request](docs/UNUSEDEzsigndocumentEditObjectV1Request.md)
  - [Model.UNUSEDEzsigndocumentEditObjectV1Response](docs/UNUSEDEzsigndocumentEditObjectV1Response.md)
  - [Model.UNUSEDEzsignfolderEditObjectV1Request](docs/UNUSEDEzsignfolderEditObjectV1Request.md)

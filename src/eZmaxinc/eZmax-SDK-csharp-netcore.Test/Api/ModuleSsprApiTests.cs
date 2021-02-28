@@ -56,13 +56,58 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Test.Api
         }
 
         /// <summary>
-        /// Test SsprRemindUsernamesV1
+        /// Test SsprResetPasswordRequestV1
         /// </summary>
         [Fact]
-        public void SsprRemindUsernamesV1Test()
+        public void SsprResetPasswordRequestV1Test()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //instance.SsprRemindUsernamesV1();
+            //SsprResetPasswordRequestV1Request ssprResetPasswordRequestV1Request = null;
+            //instance.SsprResetPasswordRequestV1(ssprResetPasswordRequestV1Request);
+        }
+
+        /// <summary>
+        /// Test SsprResetPasswordV1
+        /// </summary>
+        [Fact]
+        public void SsprResetPasswordV1Test()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //SsprResetPasswordV1Request ssprResetPasswordV1Request = null;
+            //instance.SsprResetPasswordV1(ssprResetPasswordV1Request);
+        }
+
+        /// <summary>
+        /// Test SsprSendUsernamesV1
+        /// </summary>
+        [Fact]
+        public void SsprSendUsernamesV1Test()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //SsprSendUsernamesV1Request ssprSendUsernamesV1Request = null;
+            //instance.SsprSendUsernamesV1(ssprSendUsernamesV1Request);
+        }
+
+        /// <summary>
+        /// Test SsprUnlockAccountRequestV1
+        /// </summary>
+        [Fact]
+        public void SsprUnlockAccountRequestV1Test()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //SsprUnlockAccountRequestV1Request ssprUnlockAccountRequestV1Request = null;
+            //instance.SsprUnlockAccountRequestV1(ssprUnlockAccountRequestV1Request);
+        }
+
+        /// <summary>
+        /// Test SsprUnlockAccountV1
+        /// </summary>
+        [Fact]
+        public void SsprUnlockAccountV1Test()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //SsprUnlockAccountV1Request ssprUnlockAccountV1Request = null;
+            //instance.SsprUnlockAccountV1(ssprUnlockAccountV1Request);
         }
     }
 }
