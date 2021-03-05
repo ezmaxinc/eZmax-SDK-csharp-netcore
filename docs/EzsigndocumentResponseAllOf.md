@@ -6,7 +6,6 @@ Name | Type | Description | Notes
 **fkiEzsignfolderID** | **int** | The unique ID of the Ezsignfolder | 
 **dtEzsigndocumentDuedate** | **string** | The maximum date and time at which the document can be signed. | 
 **fkiLanguageID** | **int** | The unique ID of the Language.  Valid values:  |Value|Description| |-|-| |1|French| |2|English| | 
-**sEzsigndocumentFilename** | **string** | The actual file name that will be used when downloading or attaching to an email. | 
 **sEzsigndocumentName** | **string** | The name of the document that will be presented to Ezsignfoldersignerassociations | 
 **pkiEzsigndocumentID** | **int** | The unique ID of the Ezsigntemplate | 
 **eEzsigndocumentStep** | [**FieldEEzsigndocumentStep**](FieldEEzsigndocumentStep.md) |  | 

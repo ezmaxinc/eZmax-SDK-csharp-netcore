@@ -27,32 +27,36 @@ using OpenAPIDateConverter = eZmaxinc/eZmax-SDK-csharp-netcore.Client.OpenAPIDat
 namespace eZmaxinc/eZmax-SDK-csharp-netcore.Model
 {
     /// <summary>
-    /// Request for the /1/module/sspr/sendUsernames API Request
+    /// Request for the /1/module/sspr/validateToken API Request
     /// </summary>
-    [DataContract(Name = "sspr-sendUsernames-v1-Request")]
-    public partial class SsprSendUsernamesV1Request : IEquatable<SsprSendUsernamesV1Request>, IValidatableObject
+    [DataContract(Name = "sspr-validateToken-v1-Request")]
+    public partial class SsprValidateTokenV1Request : IEquatable<SsprValidateTokenV1Request>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SsprSendUsernamesV1Request" /> class.
+        /// Initializes a new instance of the <see cref="SsprValidateTokenV1Request" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected SsprSendUsernamesV1Request() { }
+        protected SsprValidateTokenV1Request() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="SsprSendUsernamesV1Request" /> class.
+        /// Initializes a new instance of the <see cref="SsprValidateTokenV1Request" /> class.
         /// </summary>
         /// <param name="pksCustomerCode">The customer code assigned to your account (required).</param>
         /// <param name="fkiLanguageID">The unique ID of the Language.  Valid values:  |Value|Description| |-|-| |1|French| |2|English| (required).</param>
         /// <param name="eUserTypeSSPR">eUserTypeSSPR (required).</param>
-        /// <param name="sEmailAddress">The email address. (required).</param>
-        public SsprSendUsernamesV1Request(string pksCustomerCode = default(string), int fkiLanguageID = default(int), FieldEUserTypeSSPR eUserTypeSSPR = default(FieldEUserTypeSSPR), string sEmailAddress = default(string))
+        /// <param name="sEmailAddress">The email address..</param>
+        /// <param name="sUserLoginname">The Login name of the User..</param>
+        /// <param name="binUserSSPRtoken">Hex Encoded Secret SSPR token (required).</param>
+        public SsprValidateTokenV1Request(string pksCustomerCode = default(string), int fkiLanguageID = default(int), FieldEUserTypeSSPR eUserTypeSSPR = default(FieldEUserTypeSSPR), string sEmailAddress = default(string), string sUserLoginname = default(string), string binUserSSPRtoken = default(string))
         {
             // to ensure "pksCustomerCode" is required (not null)
-            this.pksCustomerCode = pksCustomerCode ?? throw new ArgumentNullException("pksCustomerCode is a required property for SsprSendUsernamesV1Request and cannot be null");
+            this.pksCustomerCode = pksCustomerCode ?? throw new ArgumentNullException("pksCustomerCode is a required property for SsprValidateTokenV1Request and cannot be null");
             this.fkiLanguageID = fkiLanguageID;
             // to ensure "eUserTypeSSPR" is required (not null)
-            this.eUserTypeSSPR = eUserTypeSSPR ?? throw new ArgumentNullException("eUserTypeSSPR is a required property for SsprSendUsernamesV1Request and cannot be null");
-            // to ensure "sEmailAddress" is required (not null)
-            this.sEmailAddress = sEmailAddress ?? throw new ArgumentNullException("sEmailAddress is a required property for SsprSendUsernamesV1Request and cannot be null");
+            this.eUserTypeSSPR = eUserTypeSSPR ?? throw new ArgumentNullException("eUserTypeSSPR is a required property for SsprValidateTokenV1Request and cannot be null");
+            // to ensure "binUserSSPRtoken" is required (not null)
+            this.binUserSSPRtoken = binUserSSPRtoken ?? throw new ArgumentNullException("binUserSSPRtoken is a required property for SsprValidateTokenV1Request and cannot be null");
+            this.sEmailAddress = sEmailAddress;
+            this.sUserLoginname = sUserLoginname;
         }
 
         /// <summary>
@@ -79,8 +83,22 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Model
         /// The email address.
         /// </summary>
         /// <value>The email address.</value>
-        [DataMember(Name = "sEmailAddress", IsRequired = true, EmitDefaultValue = false)]
+        [DataMember(Name = "sEmailAddress", EmitDefaultValue = false)]
         public string sEmailAddress { get; set; }
+
+        /// <summary>
+        /// The Login name of the User.
+        /// </summary>
+        /// <value>The Login name of the User.</value>
+        [DataMember(Name = "sUserLoginname", EmitDefaultValue = false)]
+        public string sUserLoginname { get; set; }
+
+        /// <summary>
+        /// Hex Encoded Secret SSPR token
+        /// </summary>
+        /// <value>Hex Encoded Secret SSPR token</value>
+        [DataMember(Name = "binUserSSPRtoken", IsRequired = true, EmitDefaultValue = false)]
+        public string binUserSSPRtoken { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -89,11 +107,13 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class SsprSendUsernamesV1Request {\n");
+            sb.Append("class SsprValidateTokenV1Request {\n");
             sb.Append("  pksCustomerCode: ").Append(pksCustomerCode).Append("\n");
             sb.Append("  fkiLanguageID: ").Append(fkiLanguageID).Append("\n");
             sb.Append("  eUserTypeSSPR: ").Append(eUserTypeSSPR).Append("\n");
             sb.Append("  sEmailAddress: ").Append(sEmailAddress).Append("\n");
+            sb.Append("  sUserLoginname: ").Append(sUserLoginname).Append("\n");
+            sb.Append("  binUserSSPRtoken: ").Append(binUserSSPRtoken).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -114,15 +134,15 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SsprSendUsernamesV1Request);
+            return this.Equals(input as SsprValidateTokenV1Request);
         }
 
         /// <summary>
-        /// Returns true if SsprSendUsernamesV1Request instances are equal
+        /// Returns true if SsprValidateTokenV1Request instances are equal
         /// </summary>
-        /// <param name="input">Instance of SsprSendUsernamesV1Request to be compared</param>
+        /// <param name="input">Instance of SsprValidateTokenV1Request to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SsprSendUsernamesV1Request input)
+        public bool Equals(SsprValidateTokenV1Request input)
         {
             if (input == null)
                 return false;
@@ -146,6 +166,16 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Model
                     this.sEmailAddress == input.sEmailAddress ||
                     (this.sEmailAddress != null &&
                     this.sEmailAddress.Equals(input.sEmailAddress))
+                ) && 
+                (
+                    this.sUserLoginname == input.sUserLoginname ||
+                    (this.sUserLoginname != null &&
+                    this.sUserLoginname.Equals(input.sUserLoginname))
+                ) && 
+                (
+                    this.binUserSSPRtoken == input.binUserSSPRtoken ||
+                    (this.binUserSSPRtoken != null &&
+                    this.binUserSSPRtoken.Equals(input.binUserSSPRtoken))
                 );
         }
 
@@ -165,6 +195,10 @@ namespace eZmaxinc/eZmax-SDK-csharp-netcore.Model
                     hashCode = hashCode * 59 + this.eUserTypeSSPR.GetHashCode();
                 if (this.sEmailAddress != null)
                     hashCode = hashCode * 59 + this.sEmailAddress.GetHashCode();
+                if (this.sUserLoginname != null)
+                    hashCode = hashCode * 59 + this.sUserLoginname.GetHashCode();
+                if (this.binUserSSPRtoken != null)
+                    hashCode = hashCode * 59 + this.binUserSSPRtoken.GetHashCode();
                 return hashCode;
             }
         }

@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**SsprSendUsernamesV1**](ModuleSsprApi.md#ssprsendusernamesv1) | **POST** /1/module/sspr/sendUsernames | Send username(s)
 [**SsprUnlockAccountRequestV1**](ModuleSsprApi.md#ssprunlockaccountrequestv1) | **POST** /1/module/sspr/unlockAccountRequest | Unlock Account Request
 [**SsprUnlockAccountV1**](ModuleSsprApi.md#ssprunlockaccountv1) | **POST** /1/module/sspr/unlockAccount | Unlock Account
+[**SsprValidateTokenV1**](ModuleSsprApi.md#ssprvalidatetokenv1) | **POST** /1/module/sspr/validateToken | Validate Token
 
 
 <a name="ssprresetpasswordrequestv1"></a>
@@ -390,6 +391,83 @@ void (empty response body)
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **204** | The account was unlocked Successfully |  -  |
+| **403** | You are not allowed to call this function |  -  |
+| **404** | The element you are trying to work on does not exist |  -  |
+| **422** | The syntax of the request is valid but the request cannot be completed. Look for detail in body. |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="ssprvalidatetokenv1"></a>
+# **SsprValidateTokenV1**
+> void SsprValidateTokenV1 (SsprValidateTokenV1Request ssprValidateTokenV1Request)
+
+Validate Token
+
+This endpoint validates if a Token is valid and not expired. If the token has less than an hour to its life, the TTL is reset to 1 hour.  sEmailAddress must be set if eUserTypeSSPR = EzsignUser  sUserLoginname must be set if eUserTypeSSPR = Native
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
+using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+
+namespace Example
+{
+    public class SsprValidateTokenV1Example
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://prod.api.appcluster01.ca-central-1.ezmax.com/rest";
+            // Configure API key authorization: Authorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new ModuleSsprApi(config);
+            var ssprValidateTokenV1Request = new SsprValidateTokenV1Request(); // SsprValidateTokenV1Request | 
+
+            try
+            {
+                // Validate Token
+                apiInstance.SsprValidateTokenV1(ssprValidateTokenV1Request);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ModuleSsprApi.SsprValidateTokenV1: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ssprValidateTokenV1Request** | [**SsprValidateTokenV1Request**](SsprValidateTokenV1Request.md)|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[Authorization](../README.md#Authorization)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **204** | The token is valid |  -  |
 | **403** | You are not allowed to call this function |  -  |
 | **404** | The element you are trying to work on does not exist |  -  |
 | **422** | The syntax of the request is valid but the request cannot be completed. Look for detail in body. |  -  |
