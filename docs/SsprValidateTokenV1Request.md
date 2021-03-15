@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.SsprValidateTokenV1Request
 Request for the /1/module/sspr/validateToken API Request
+
 ## Properties
 
 Name | Type | Description | Notes

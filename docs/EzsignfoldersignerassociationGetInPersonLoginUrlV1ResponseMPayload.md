@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayload
 Payload for the /1/object/ezsignfoldersignerassociation/getInPersonLoginUrl API Request
+
 ## Properties
 
 Name | Type | Description | Notes

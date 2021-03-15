@@ -1,4 +1,5 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.ContactRequestCompoundAllOf
+
 ## Properties
 
 Name | Type | Description | Notes

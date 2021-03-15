@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.AddressRequest
 An Address Object
+
 ## Properties
 
 Name | Type | Description | Notes

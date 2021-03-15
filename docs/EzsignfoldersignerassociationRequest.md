@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignfoldersignerassociationRequest
 An Ezsignfoldersignerassociation Object
+
 ## Properties
 
 Name | Type | Description | Notes

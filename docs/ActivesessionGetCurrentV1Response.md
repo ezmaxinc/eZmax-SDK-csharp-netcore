@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.ActivesessionGetCurrentV1Response
 Response for the /1/object/activesession/getCurrent API Request
+
 ## Properties
 
 Name | Type | Description | Notes

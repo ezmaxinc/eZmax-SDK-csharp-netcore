@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.CommonResponseObjSQLQuery
 Definition of objSQLQuery Object
+
 ## Properties
 
 Name | Type | Description | Notes

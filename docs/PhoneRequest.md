@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.PhoneRequest
 A Phone Object
+
 ## Properties
 
 Name | Type | Description | Notes

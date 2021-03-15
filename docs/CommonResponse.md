@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.CommonResponse
 All API response will inherit this based Response
+
 ## Properties
 
 Name | Type | Description | Notes

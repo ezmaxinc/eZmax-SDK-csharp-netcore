@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.FranchisereferalincomeRequest
 An Franchisereferalincome Object
+
 ## Properties
 
 Name | Type | Description | Notes

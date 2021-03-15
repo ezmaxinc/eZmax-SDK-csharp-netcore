@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.WebhookResponse
 A webhook object
+
 ## Properties
 
 Name | Type | Description | Notes

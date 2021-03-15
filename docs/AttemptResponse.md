@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.AttemptResponse
 An Attempt object
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.SsprResetPasswordRequestV1Request
 Request for the /1/module/sspr/resetPasswordRequest API Request
+
 ## Properties
 
 Name | Type | Description | Notes

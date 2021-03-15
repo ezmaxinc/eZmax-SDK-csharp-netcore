@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.UserResponse
 A User Object
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignfolderRequestCompound
 An Ezsignfolder Object and children to create a complete structure
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignfolderSendV1Response
 Response for the /1/object/ezsignfolder/{pkiEzsignfolderID}/send API Request
+
 ## Properties
 
 Name | Type | Description | Notes

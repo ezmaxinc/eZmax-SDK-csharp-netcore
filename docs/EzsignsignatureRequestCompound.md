@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignsignatureRequestCompound
 An Ezsignsignature Object and children to create a complete structure
+
 ## Properties
 
 Name | Type | Description | Notes

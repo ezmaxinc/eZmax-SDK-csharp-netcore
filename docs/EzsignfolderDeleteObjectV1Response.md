@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.EzsignfolderDeleteObjectV1Response
 Response for the /1/object/ezsignfolder/deleteObject API Request
+
 ## Properties
 
 Name | Type | Description | Notes

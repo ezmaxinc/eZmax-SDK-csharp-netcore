@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.SsprSendUsernamesV1Request
 Request for the /1/module/sspr/sendUsernames API Request
+
 ## Properties
 
 Name | Type | Description | Notes

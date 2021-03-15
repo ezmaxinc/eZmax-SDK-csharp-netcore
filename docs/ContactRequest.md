@@ -1,5 +1,6 @@
 # eZmaxinc/eZmax-SDK-csharp-netcore.Model.ContactRequest
 A Contact Object
+
 ## Properties
 
 Name | Type | Description | Notes
