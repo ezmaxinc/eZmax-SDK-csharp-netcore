@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Model.FieldEUserType
+# eZmaxApi.Model.FieldEUserType
 The user type of the User.
 
 ## Properties

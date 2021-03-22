@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Api.ObjectEzsigndocumentApi
+# eZmaxApi.Api.ObjectEzsigndocumentApi
 
 All URIs are relative to *https://prod.api.appcluster01.ca-central-1.ezmax.com/rest*
 
@@ -24,9 +24,9 @@ This endpoint applies a predefined template to the ezsign document. This allows 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -104,9 +104,9 @@ The endpoint allows to create one or many elements at once.  The array can conta
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -178,9 +178,9 @@ Delete an existing Ezsigndocument
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -254,9 +254,9 @@ Retrieve an existing Ezsigndocument's children IDs
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -329,9 +329,9 @@ This endpoint returns URLs to different files that can be downloaded during the 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -407,9 +407,9 @@ Retrieve an existing Ezsigndocument
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {

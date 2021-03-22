@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Model.FieldEUserTypeSSPR
+# eZmaxApi.Model.FieldEUserTypeSSPR
 The user type of the User for SSPR
 
 ## Properties

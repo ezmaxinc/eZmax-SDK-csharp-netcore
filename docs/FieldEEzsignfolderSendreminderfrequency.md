@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Model.FieldEEzsignfolderSendreminderfrequency
+# eZmaxApi.Model.FieldEEzsignfolderSendreminderfrequency
 Frequency at which reminders will be sent to signers that haven't signed the documents
 
 ## Properties

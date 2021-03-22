@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Model.FieldEEzsignfolderStep
+# eZmaxApi.Model.FieldEEzsignfolderStep
 The signature step of the Ezsignfolder.
 
 ## Properties

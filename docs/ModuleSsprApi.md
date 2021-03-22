@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Api.ModuleSsprApi
+# eZmaxApi.Api.ModuleSsprApi
 
 All URIs are relative to *https://prod.api.appcluster01.ca-central-1.ezmax.com/rest*
 
@@ -24,9 +24,9 @@ This endpoint sends an email with a link to reset the user's password.  sEmailAd
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -102,9 +102,9 @@ This endpoint resets the user's password.  sEmailAddress must be set if eUserTyp
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -180,9 +180,9 @@ This endpoint returns an email with the username(s) matching the email address p
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -258,9 +258,9 @@ This endpoint sends an email with a link to unlock the user account.  sEmailAddr
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -336,9 +336,9 @@ This endpoint unlocks the user account.  sEmailAddress must be set if eUserTypeS
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -414,9 +414,9 @@ This endpoint validates if a Token is valid and not expired.  sEmailAddress must
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Api.ObjectEzsignfoldersignerassociationApi
+# eZmaxApi.Api.ObjectEzsignfoldersignerassociationApi
 
 All URIs are relative to *https://prod.api.appcluster01.ca-central-1.ezmax.com/rest*
 
@@ -23,9 +23,9 @@ The endpoint allows to create one or many elements at once.  The array can conta
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -97,9 +97,9 @@ Delete an existing Ezsignfoldersignerassociation
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -173,9 +173,9 @@ Retrieve an existing Ezsignfoldersignerassociation's children IDs
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -248,9 +248,9 @@ This endpoint returns a Login Url that can be used in a browser or embedded in a
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {
@@ -324,9 +324,9 @@ Retrieve an existing Ezsignfoldersignerassociation
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Api;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Client;
-using eZmaxinc/eZmax-SDK-csharp-netcore.Model;
+using eZmaxApi.Api;
+using eZmaxApi.Client;
+using eZmaxApi.Model;
 
 namespace Example
 {

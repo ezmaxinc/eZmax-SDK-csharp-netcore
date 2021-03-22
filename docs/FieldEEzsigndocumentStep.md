@@ -1,4 +1,4 @@
-# eZmaxinc/eZmax-SDK-csharp-netcore.Model.FieldEEzsigndocumentStep
+# eZmaxApi.Model.FieldEEzsigndocumentStep
 The signature step of the Ezsigndocument.
 
 ## Properties
