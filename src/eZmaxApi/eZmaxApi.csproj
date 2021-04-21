@@ -12,7 +12,7 @@
     <Description>A library generated from a OpenAPI doc</Description>
     <Copyright>No Copyright</Copyright>
     <RootNamespace>eZmaxApi</RootNamespace>
-    <Version>1.0.41</Version>
+    <Version>1.0.42</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\eZmaxApi.xml</DocumentationFile>
     <RepositoryUrl>https://github.com/ezmaxinc/ezmax-sdk-csharp-netcore.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
