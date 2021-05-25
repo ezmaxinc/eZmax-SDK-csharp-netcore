@@ -12,6 +12,9 @@ docs/ApikeyRequest.md
 docs/ApikeyRequestCompound.md
 docs/ApikeyResponse.md
 docs/AttemptResponse.md
+docs/AuthenticateAuthenticateV2Request.md
+docs/AuthenticateAuthenticateV2Response.md
+docs/AuthenticateAuthenticateV2ResponseMPayload.md
 docs/CommonAudit.md
 docs/CommonGetAutocompleteV1Response.md
 docs/CommonGetAutocompleteV1ResponseMPayload.md
@@ -87,6 +90,7 @@ docs/FranchisereferalincomeRequest.md
 docs/FranchisereferalincomeRequestCompound.md
 docs/GlobalCustomerApi.md
 docs/GlobalCustomerGetEndpointV1Response.md
+docs/ModuleAuthenticateApi.md
 docs/ModuleSsprApi.md
 docs/ModuleUserApi.md
 docs/MultilingualApikeyDescription.md
@@ -131,6 +135,7 @@ docs/WebsiteRequest.md
 eZmaxApi.sln
 git_push.sh
 src/eZmaxApi.Test/Api/GlobalCustomerApiTests.cs
+src/eZmaxApi.Test/Api/ModuleAuthenticateApiTests.cs
 src/eZmaxApi.Test/Api/ModuleSsprApiTests.cs
 src/eZmaxApi.Test/Api/ModuleUserApiTests.cs
 src/eZmaxApi.Test/Api/ObjectActivesessionApiTests.cs
@@ -153,6 +158,9 @@ src/eZmaxApi.Test/Model/ApikeyRequestCompoundTests.cs
 src/eZmaxApi.Test/Model/ApikeyRequestTests.cs
 src/eZmaxApi.Test/Model/ApikeyResponseTests.cs
 src/eZmaxApi.Test/Model/AttemptResponseTests.cs
+src/eZmaxApi.Test/Model/AuthenticateAuthenticateV2RequestTests.cs
+src/eZmaxApi.Test/Model/AuthenticateAuthenticateV2ResponseMPayloadTests.cs
+src/eZmaxApi.Test/Model/AuthenticateAuthenticateV2ResponseTests.cs
 src/eZmaxApi.Test/Model/CommonAuditTests.cs
 src/eZmaxApi.Test/Model/CommonGetAutocompleteV1ResponseMPayloadTests.cs
 src/eZmaxApi.Test/Model/CommonGetAutocompleteV1ResponseTests.cs
@@ -258,6 +266,7 @@ src/eZmaxApi.Test/Model/WebhookUserUserCreatedTests.cs
 src/eZmaxApi.Test/Model/WebsiteRequestTests.cs
 src/eZmaxApi.Test/eZmaxApi.Test.csproj
 src/eZmaxApi/Api/GlobalCustomerApi.cs
+src/eZmaxApi/Api/ModuleAuthenticateApi.cs
 src/eZmaxApi/Api/ModuleSsprApi.cs
 src/eZmaxApi/Api/ModuleUserApi.cs
 src/eZmaxApi/Api/ObjectActivesessionApi.cs
@@ -297,6 +306,9 @@ src/eZmaxApi/Model/ApikeyRequest.cs
 src/eZmaxApi/Model/ApikeyRequestCompound.cs
 src/eZmaxApi/Model/ApikeyResponse.cs
 src/eZmaxApi/Model/AttemptResponse.cs
+src/eZmaxApi/Model/AuthenticateAuthenticateV2Request.cs
+src/eZmaxApi/Model/AuthenticateAuthenticateV2Response.cs
+src/eZmaxApi/Model/AuthenticateAuthenticateV2ResponseMPayload.cs
 src/eZmaxApi/Model/CommonAudit.cs
 src/eZmaxApi/Model/CommonGetAutocompleteV1Response.cs
 src/eZmaxApi/Model/CommonGetAutocompleteV1ResponseMPayload.cs
