@@ -80,6 +80,7 @@ docs/EzsignsignerRequestCompoundContact.md
 docs/FieldEEzsigndocumentStep.md
 docs/FieldEEzsignfolderSendreminderfrequency.md
 docs/FieldEEzsignfolderStep.md
+docs/FieldEEzsignsignatureType.md
 docs/FieldEPhoneType.md
 docs/FieldEUserType.md
 docs/FieldEUserTypeSSPR.md
@@ -226,6 +227,7 @@ src/eZmaxApi.Test/Model/EzsignsignerRequestTests.cs
 src/eZmaxApi.Test/Model/FieldEEzsigndocumentStepTests.cs
 src/eZmaxApi.Test/Model/FieldEEzsignfolderSendreminderfrequencyTests.cs
 src/eZmaxApi.Test/Model/FieldEEzsignfolderStepTests.cs
+src/eZmaxApi.Test/Model/FieldEEzsignsignatureTypeTests.cs
 src/eZmaxApi.Test/Model/FieldEPhoneTypeTests.cs
 src/eZmaxApi.Test/Model/FieldEUserTypeSSPRTests.cs
 src/eZmaxApi.Test/Model/FieldEUserTypeTests.cs
@@ -374,6 +376,7 @@ src/eZmaxApi/Model/EzsignsignerRequestCompoundContact.cs
 src/eZmaxApi/Model/FieldEEzsigndocumentStep.cs
 src/eZmaxApi/Model/FieldEEzsignfolderSendreminderfrequency.cs
 src/eZmaxApi/Model/FieldEEzsignfolderStep.cs
+src/eZmaxApi/Model/FieldEEzsignsignatureType.cs
 src/eZmaxApi/Model/FieldEPhoneType.cs
 src/eZmaxApi/Model/FieldEUserType.cs
 src/eZmaxApi/Model/FieldEUserTypeSSPR.cs
