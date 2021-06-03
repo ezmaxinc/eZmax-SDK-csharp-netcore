@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eZmaxApi", "src\eZmaxApi\eZmaxApi.csproj", "{52F1952D-7CA3-46B1-A2CD-A13CE32878FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eZmaxApi", "src\eZmaxApi\eZmaxApi.csproj", "{677005E5-857C-4125-945F-845FBE37FF34}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eZmaxApi.Test", "src\eZmaxApi.Test\eZmaxApi.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52F1952D-7CA3-46B1-A2CD-A13CE32878FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52F1952D-7CA3-46B1-A2CD-A13CE32878FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52F1952D-7CA3-46B1-A2CD-A13CE32878FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52F1952D-7CA3-46B1-A2CD-A13CE32878FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677005E5-857C-4125-945F-845FBE37FF34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677005E5-857C-4125-945F-845FBE37FF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677005E5-857C-4125-945F-845FBE37FF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677005E5-857C-4125-945F-845FBE37FF34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
